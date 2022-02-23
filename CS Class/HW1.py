@@ -23,7 +23,7 @@ print("   x _   _ x")
 print("  x  O   O  x")
 print("  x    |    x")
 print("   x   |   x")
-print("   x  __/  x")
+print("   x  \\__/ x")
 print("     xxxxx")
 
 
