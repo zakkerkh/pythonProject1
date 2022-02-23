@@ -8,12 +8,19 @@ numb = input("What is the number: ")
 addr = input("What is the address?: ").title()
 
 var = name, numb, addr
-print(var)
+print(", ".join(var))
+
+
+
+
+
+
+
 equation = input("operation")
 def multiplication(x,y):
     while equation == "x":
         print(x*y)
-    multiplication(int(input("HGFJ"),(int(input("")))
+    multiplication(int(input("HGFJ"))),(int(input("")))
 
 
 

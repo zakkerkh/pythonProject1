@@ -9,12 +9,13 @@ names = []
 numbs = []
 addrs = []
 
-names.append(name)
-
-
-print(names)
-
-
+def contact():
+    var = name, numb, addr
+    book.append(var)
+    print(var)
+    print(book)
+    redo = input("Would you like to add another contact?: ")
+contact()
 
 #testing git, yet again, again, again
 #testing git again of prior lapious carppious
