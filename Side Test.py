@@ -1,9 +1,23 @@
-True = ("Yes", "yes", "y")
-False = ("No", "no", "n")
 
-hello = input("dsfds")
+#tesing list functions
+#Address Book
+book = []
 
-if hello is False:
-    print("it is false")
-elif hello is True:
-    print("It is true")
+name = input("What is the name?: ").title()
+numb = input("What is the number: ")
+addr = input("What is the address?: ").title()
+
+var = name, numb, addr
+print(var)
+equation = input("operation")
+def multiplication(x,y):
+    while equation == "x":
+        print(x*y)
+    multiplication(int(input("HGFJ"),(int(input("")))
+
+
+
+#testing git, yet again, again, again
+#testing git again of prior lapious carppious
+#testing on pycharm
+
