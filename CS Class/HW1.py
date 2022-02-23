@@ -23,4 +23,28 @@ print("   x _   _ x")
 print("  x  O   O  x")
 print("  x    |    x")
 print("   x   |   x")
-print("   x  __/")
+print("   x  __/  x")
+print("     xxxxx")
+
+
+print("      !     !")
+print("      !     !")
+print("      !     !")
+print("---------------------")
+print("      !     !")
+print("      !  x  !")
+print("      !     !")
+print("---------------------")
+print("      !     !")
+print("      !     !")
+print("      !     !")
+
+print("  B    I    N    G    O")
+print(" 89   23   43   23   23")
+print(" 84   83   75   43   89")
+print(" 29   47 FREE   30   28")
+print(" 93   23   09   94   23")
+print(" 32   95   27   39   92")
+
+
+
