@@ -1,21 +1,32 @@
 #Address Book
 book = []
 
-name = input("What is the name?: ").title()
-numb = input("What is the number: ")
-addr = input("What is the address?: ").title()
+rlist = ["Yes", "yes", "y"]
+nrlist = ["No", "no", "n"]
+alist = nrlist + rlist
 
-names = []
-numbs = []
-addrs = []
-
-def contact():
+def contact(name, numb, addr):
     var = name, numb, addr
     book.append(var)
     print(var)
     print(book)
-    redo = input("Would you like to add another contact?: ")
-contact()
+    def redoing():
+        redo = input("Would you like to add another contact?: ")
+        def invalid():
+            if redo not in alist:
+                print("Invalid Entry")
+                stop = input("Would you like to quit?: ")
+                if stop in nrlist:
+                    redoing()
+                elif stop in rlist:
+                    quit()
+                elif stop not in alist:
+                    invalid()
+
+
+
+
+contact(input("What is the name?: ").title(), input("What is the number: "), addr = input("What is the address?: ").title())
 
 #testing git, yet again, again, again
 #testing git again of prior lapious carppious
