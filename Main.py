@@ -40,8 +40,3 @@ numb = input("What is the number: ")
 addr = input("What is the address?: ").title()
 
 contact(name, numb, addr)
-
-#testing git, yet again, again, again
-#testing git again of prior lapious carppious
-#testing on pycharm
-
