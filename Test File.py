@@ -163,7 +163,7 @@ for row in numb_g:
     for dol in row:
         print(dol)
 
-
+#Translator
 def trans(phr):
     translation = ""
     for letter in phr:
@@ -174,10 +174,11 @@ def trans(phr):
     return translation
 print(trans("dingery"))
 
+#Custom Translator
 import random
 
-suff = ["stein", "burg", "schlag"]
-wor = random.choice(suff)
+suffix = ["stein", "burg", "schlag"]
+wor = random.choice(suffix)
 
 entr = input("What is the word you want to translate?")
 
