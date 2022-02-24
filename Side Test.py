@@ -1,9 +1,5 @@
-True = ("Yes", "yes", "y")
-False = ("No", "no", "n")
+var = *
 
-hello = input("dsfds")
+var2 = 3 var 2
 
-if hello is False:
-    print("it is false")
-elif hello is True:
-    print("It is true")
+print(var2)
