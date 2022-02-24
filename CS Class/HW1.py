@@ -2,6 +2,7 @@
 #ICS2O_2122_S2
 #23/02/2022
 #Hello, how are you doing
+import math
 
 print("This is anabout me program")
 print("My name is Zakariyah Khan")
@@ -47,17 +48,51 @@ print(" 93   23   09   94   23")
 print(" 32   95   27   39   92")
 
 var = True
-while var == True:
+#while var == True:
 
-      print("     xxxxx")
-      print("    x     x")
-      print("   x _   _ x")
-      print("  x  O   O  x")
-      print("  x    |    x")
-      print("   x   |   x")
-      print("   x  \\__/ x")
-      print("     xxxxx")
+      #print("     xxxxx")
+      #print("    x     x")
+      #print("   x _   _ x")
+      #print("  x  O   O  x")
+      #print("  x    |    x")
+      #print("   x   |   x")
+      #print("   x  \\__/ x")
+      #print("     xxxxx")
+
+#24/02/2022
+
+import math
+num = 7/8
+print(num)
+
+#0.875
+
+num = 7/8
+print(round(num, 1))
+#Prints value rounded to 1 decimal place
+
+#0.9
+
+print(math.sqrt(25))
+
+#5.0
+
+print(math.gcd(10, 20))
+#Greatest common diviser
+
+#10
+
+print(math.pi)
+#3.141592653589793
+
+print("The square root of 25 is:", math.sqrt(25))
 
 
 
+print("What is your age")
+age = int(input())
+
+age = int(input("What is your age?"))
+
+print(age, "is a very good age")
 
