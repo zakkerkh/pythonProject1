@@ -1,3 +1,8 @@
+#Zakariyah. M. J. Khan
+#ICS2O_2122_S2
+#25/02/2022
+#Hello, how are you doing
+
 import math
 print("the average to the numbers 3, 7, 8, 3, 9 is", (3+7+8+3+9)/5)
 
