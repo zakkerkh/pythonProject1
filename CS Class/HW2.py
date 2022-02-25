@@ -33,11 +33,11 @@ print("The volume of the rectangular prism is:", rectl*recth*rectw)
 #print(num1[0][1])
 #print(num1[0][2])
 
-num = (input("Enter 2-digit number"))
-print(num[0][0])
-print(num[0][1])
+num1 = int(input("Enter 2-digit number"))
+print(num1%100//10)
+print(num1%10)
 
-num1 = [input("Enter 3-digit number")]
-print(num1[0][0])
-print(num1[0][1])
-print(num1[0][2])
+num1 = int(input("Enter 3-digit number"))
+print(num1%1000//100)
+print(num1%100//10)
+print(num1%10)

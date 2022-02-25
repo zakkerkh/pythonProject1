@@ -61,3 +61,6 @@ print("Welcome to a program :)")
 age = int(input("What is your age? ")
 print(age, "is a wonderful age!")
 
+
+#Question 5
+
