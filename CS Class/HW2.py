@@ -24,7 +24,16 @@ rectw = int(input("Width of rectangular prism: "))
 recth = int(input("Height of rectangular prism: "))
 print("The volume of the rectangular prism is:", rectl*recth*rectw)
 
-num = [input("Enter 2-digit number")]
+#num = [input("Enter 2-digit number")]
+#print(num[0][0])
+#print(num[0][1])
+
+#num1 = [input("Enter 3-digit number")]
+#print(num1[0][0])
+#print(num1[0][1])
+#print(num1[0][2])
+
+num = (input("Enter 2-digit number"))
 print(num[0][0])
 print(num[0][1])
 
