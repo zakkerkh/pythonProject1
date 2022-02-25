@@ -9,6 +9,13 @@ var5 = int(input("Fifth Number: "))
 print("The average of the numbers is:", (var1+var2+var3+var4+var5)/5)
 
 rad = float(input("Radius of sphere: "))
-pi = math.pi()
-print(pie*4/3*rad**3)
+print(math.pi*4/3*rad**3)
+
+cub = int(input("Side length of cube: "))
+print("The volume of the cube is:", cub**3)
+
+rectl = int(input("Length of rectangular prism: "))
+rectw = int(input("Width of rectangular prism: "))
+recth = int(input("Height of rectangular prism: "))
+print("The volume of the rectangular prism is:", rectl*recth*rectw)
 
