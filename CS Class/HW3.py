@@ -62,5 +62,11 @@ age = int(input("What is your age? ")
 print(age, "is a wonderful age!")
 
 
-#Question 5
+#Question 6
+pointx = int(input("x value of first point"))
+pointy = int(input("y value of first point"))
+point1x = int(input("x value of second point"))
+point1y = int(input("y value of second point"))
+slope = ((pointy-point1y)/(pointx-pointx))
+
 
