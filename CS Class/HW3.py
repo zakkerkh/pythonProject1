@@ -3,7 +3,7 @@
 #25/02/2022
 #Hello, how are you doing
 
-import math
+#Question 1a
 #how you are not supposed to do it
 #name = print("Enter your name")
 #print ("hello" name!)
@@ -12,11 +12,11 @@ import math
 #apples * 0.78 = cost
 #input("Your total cost", cost)
 
-#Question 1
 #How you are supposed to do it
 name = input("Enter your name ")
 print("Hello", name, "!") #You can use "+" instead of the second comma to eliminate to space
 
+#Question 1b
 print("Each apple costs 0.78 dollars")
 apples = int(input("How much do you wish to buy "))
 apple_cost = apples * 0.78 * 1.13
@@ -67,6 +67,24 @@ pointx = int(input("x value of first point"))
 pointy = int(input("y value of first point"))
 point1x = int(input("x value of second point"))
 point1y = int(input("y value of second point"))
-slope = ((pointy-point1y)/(pointx-pointx))
+slope = ((pointy-point1y)/(pointx-point1x))
+b = slope*pointx-pointy
+print("The equation of the line is: y =", slope,"x +", b)
+
+#Question 7
+pointx = int(input("x value of first point"))
+pointy = int(input("y value of first point"))
+point1x = int(input("x value of second point"))
+point1y = int(input("y value of second point"))
+print("The midpoint between the points is:", "(", (pointx+point1x)/2, ",", (pointy+point1y)/2, ")")
+
+#Question 8
+print("Compound Interest Calculator")
+principle = float(input("How much are you investing?: "))
+interest = float(input("What is the interest rate?: "))
+years = float(input("For how many years is it"))
+interest = interest/100
+print("Amount Invested:", principle)
+print("Amount Earned:", principle*(1+interest)**years)
 
 
