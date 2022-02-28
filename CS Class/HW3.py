@@ -20,18 +20,19 @@ print("Hello", name, "!") #You can use "+" instead of the second comma to elimin
 print("Each apple costs 0.78 dollars")
 apples = int(input("How much do you wish to buy "))
 apple_cost = apples * 0.78 * 1.13
-print("Your apple cost is", apple_cost)
+print("Your apple cost is", round(apple_cost, 2))
 
 print("Each orange costs 0.64 dollars")
 oranges = int(input("How much do you wish to buy "))
 orange_cost = oranges * 0.64 * 1.13
-print("Your orange cost is", orange_cost)
+print("Your orange cost is", round(orange_cost, 2))
 
 print("Each banana costs 1.21 dollars")
 bananas = int(input("How much do you wish to buy "))
 banana_cost = bananas * 1.21 * 1.13
-print("Your banana cost is", banana_cost)
-print("Your total cost is:", banana_cost+orange_cost+apple_cost)
+print("Your banana cost is", round(banana_cost, 2))
+total_cost = banana_cost+orange_cost+apple_cost
+print("Your total cost is:", round(total_cost, 2))
 
 
 # Question 2
@@ -58,7 +59,7 @@ print("The value is:", (1/4) * x**2 + 4 * x * y - 7 * x * y**3)
 
 #Correct Version
 print("Welcome to a program :)")
-age = int(input("What is your age? ")
+age = int(input("What is your age? "))
 print(age, "is a wonderful age!")
 
 
@@ -85,6 +86,7 @@ interest = float(input("What is the interest rate?: "))
 years = float(input("For how many years is it"))
 interest = interest/100
 print("Amount Invested:", principle)
-print("Amount Earned:", principle*(1+interest)**years)
+print("Amount Earned:",(principle*(1+interest)**years)-principle)
+print("Total amount:", principle*(1+interest)**years)
 
 
