@@ -5,6 +5,8 @@
 import random
 import math
 
+#Round Numbers I
+#Question 1
 var1 = random.randint(0, 20)
 var2 = random.randint(0, 20)
 var3 = random.randint(0, 20)
@@ -12,18 +14,21 @@ var4 = random.randint(0, 20)
 var5 = random.randint(0, 20)
 print((var5+var4+var3+var2+var1)/5)
 
-sphere = random.randint(5, 10)
-cube = random.randint(5, 10)
-rectangulLength =random.randint(5,10)
-rectangulWidth =random.randint(5,10)
-rectangulHeight =random.randint(5,10)
+#Question 2
+sphere = round(random.uniform(5, 10), 1)
+cube = round(random.uniform(5, 10), 1)
+rectangulLength = round(random.uniform(5,10), 1)
+rectangulWidth = round(random.uniform(5,10), 1)
+rectangulHeight = round(random.uniform(5,10), 1)
 spheretotal = (2/3)*math.pi*sphere
 print("Sphere height is:", round(spheretotal, 1))
 print("Cube height is:", round(cube**3, 1))
 print("Rectangular prism height is:", round(rectangulHeight*rectangulWidth*rectangulLength, 1))
 
-
-#add to include decimals
+#Question 3
+variable1 = random.randint(10, 30)
+variable2 = random.randint(variable1, 30)
+print("Your random numbers are,", variable1, "and", variable2)
 
 #Random Numbers II
 #Question 1
@@ -67,11 +72,10 @@ distance = math.sqrt((x2-x1)**2+(y2-y1)**2)
 print("The distance between the points is:", distance)
 
 #Question 2
-#MAKE SURE THEY ARE ODD NUMBERS
-x3 = random.randint(-10, 10)
-x4 = random.randint(-10, 10)
-y3 = random.randint(-10, 10)
-y4 = random.randint(-10, 10)
+x3 = (random.randrange(-10, 10, 2))+1
+x4 = (random.randrange(-10, 10, 2))+1
+y3 = (random.randrange(-10, 10, 2))+1
+y4 = (random.randrange(-10, 10, 2))+1
 
 print("Point 1:", x3, ",", y3)
 print("Point 2:", x4, ",", y4)
@@ -81,9 +85,8 @@ b = slope*x3-y4
 print("The equation of the line is: y =", slope, "x +", b)
 
 #Question 3
-#MAKE SURE IT IS EVEN
-slope1 = random.randint(1, 50)
-y_int = random.randint(1, 50)
+slope1 = random.randrange(0, 50, 2)
+y_int = random.randrange(0, 50, 2)
 
 point_x1 = random.randint(1, 50)
 point_y1 = slope1*point_x1+y_int
