@@ -51,10 +51,13 @@ else:
 number = random.randint(10, 15)
 guess = int(input("Guess a number between 10 and 15: "))
 score = 0
-if guess==number:
-    score = score+3
-    print("You got it")
-    print(score)
-else:
-
+def game(score, guess):
+    if guess==number:
+        score = score+3
+        print("You got it")
+        print(score)
+    else:
+        score = score-1
+        print("Try again")
+        print(score)
 
