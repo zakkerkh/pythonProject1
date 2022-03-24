@@ -42,3 +42,5 @@ weekend = input("Is it the weekend?: ")
 
 if vacation=="yes" or weekend=="yes":
     print("You can sleep in")
+else:
+    print("You cannot sleep in")
