@@ -55,4 +55,6 @@ if guess==number:
     score = score+3
     print("You got it")
     print(score)
+else:
+
 
