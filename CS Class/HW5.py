@@ -5,6 +5,7 @@
 
 #Planning II
 #Question 1
+import random
 
 num1 = int(input("What is your first number?: "))
 num2 = int(input("What is your second number?: "))
@@ -37,6 +38,7 @@ else:
     print("It is not a right triangle")
 
 #Planning I
+#Question 2
 vacation = input("Are you on vacation?: ")
 weekend = input("Is it the weekend?: ")
 
@@ -44,3 +46,13 @@ if vacation=="yes" or weekend=="yes":
     print("You can sleep in")
 else:
     print("You cannot sleep in")
+
+#Question 3
+number = random.randint(10, 15)
+guess = int(input("Guess a number between 10 and 15: "))
+score = 0
+if guess==number:
+    score = score+3
+    print("You got it")
+    print(score)
+
