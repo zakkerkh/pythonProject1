@@ -10,18 +10,18 @@ import random
 num1 = int(input("What is your first number?: "))
 num2 = int(input("What is your second number?: "))
 
-if num1>num2:
+if num1 > num2:
     print(num1+num2)
 else:
     print(num1*num2)
 
 #Question 4
 cloudy = input("is it cloudy?: ")
-temp = int(input("What is the temperature?: "))
+temp = int(input("What is the temperature? y/n: "))
 
-if temp<0:
+if temp < 0:
     print("Today is cold")
-elif temp<25 and cloudy=="yes":
+elif temp < 25 and cloudy == "y":
     print("Today is  cloudy")
 else:
     print("Today is so warm!!!")
@@ -32,32 +32,43 @@ A = int(input("A: "))
 B = int(input("B: "))
 C = int(input("C: "))
 
-if A**2==B**2+C**2:
+if A**2 == B**2+C**2:
     print("It is a right triangle")
 else:
     print("It is not a right triangle")
 
 #Planning I
 #Question 2
-vacation = input("Are you on vacation?: ")
-weekend = input("Is it the weekend?: ")
+vacation = input("Are you on vacation? y/n: ")
+weekend = input("Is it the weekend? y/n: ")
 
-if vacation=="yes" or weekend=="yes":
+if vacation == "y" or weekend == "y":
     print("You can sleep in")
 else:
     print("You cannot sleep in")
 
 #Question 3
-number = random.randint(10, 15)
-guess = int(input("Guess a number between 10 and 15: "))
+
+
 score = 0
-def game(score, guess):
+
+def game(score):
+    number = random.randint(10, 15)
+    guess = int(input("Guess a number between 10 and 15: "))
+
     if guess==number:
         score = score+3
         print("You got it")
         print(score)
     else:
         score = score-1
-        print("Try again")
         print(score)
+        print("Try again")
+    play = input("Would you like to play again y/n?: ")
+    if play == "y":
+        game(score)
+    else:
+        print("Thank you for playing")
+        quit()
+game(score)
 
