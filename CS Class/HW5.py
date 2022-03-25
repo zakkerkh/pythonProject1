@@ -56,7 +56,7 @@ def game(score):
     number = random.randint(10, 15)
     guess = int(input("Guess a number between 10 and 15: "))
 
-    if guess==number:
+    if guess == number:
         score = score+3
         print("You got it")
         print(score)
