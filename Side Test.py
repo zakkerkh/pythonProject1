@@ -1,26 +1,14 @@
-import random
-#Question 3
+age = int(input("What is your age?: "))
 
-
-score = 0
-
-def game(score):
-    number = random.randint(10, 15)
-    print(number)
-    guess = int(input("Guess a number between 10 and 15: "))
-
-    if guess==number:
-        score = score+3
-        print("You got it")
-        print(score)
-    else:
-        score = score-1
-        print(score)
-        print("Try again")
-    play = input("Would you like to play again y/n?: ")
-    if play == "y":
-        game(score)
-    else:
-        print("Thank you for playing")
-        quit()
-game(score)
+if age <= 0:
+    print("Invalid entry")
+elif age < 3:
+    print("Toddler")
+elif age < 10:
+    print("Child")
+elif age < 12:
+    print("Preteen")
+elif age < 18:
+    print("Teen")
+else:
+    print("Adult")
