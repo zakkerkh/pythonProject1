@@ -12,3 +12,11 @@ if var1+var2>15:
     print(var1*var2)
 else:
     print(var1-var2)
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+if 1<num1<10 and 1<num2<10 and num2<=0:
+    print("True")
+elif num2<=0 and 1>num1>10:
+    print("True")
