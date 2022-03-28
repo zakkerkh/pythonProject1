@@ -64,7 +64,7 @@ age = int(input("What is your age?: "))
 
 if age <= 0:
     print("Invalid entry")
-elif age < 3:
+elif age < 3 and age > 0:
     print("Toddler")
 elif age < 10:
     print("Child")
