@@ -57,7 +57,7 @@ else:
     print("the correct answer was", num1 ** num2)
 
 print("What is", num1, "/", num2)
-question5 = int(input())
+question5 = float(input())
 if question5 == num1/num2:
     print("You got the right answer")
     score = score+1
@@ -69,7 +69,7 @@ else:
     print("the correct answer was", num1 / num2)
 
 print("What is", num1, "//", num2)
-question6 = int(input())
+question6 = float(input())
 if question6 == num1//num2:
     print("You got the right answer")
     score = score+1
@@ -81,7 +81,7 @@ else:
     print("the correct answer was", num1 // num2)
 
 print("What is", num1, "%", num2)
-question7 = int(input())
+question7 = float(input())
 if question7 == num1%num2:
     print("You got the right answer")
     score = score+1
