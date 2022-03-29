@@ -20,3 +20,5 @@ if 1<num1<10 and 1<num2<10 and num2<=0:
     print("True")
 elif num2<=0 and 1>num1>10:
     print("True")
+elif num2==0:
+    print("Maybe")
