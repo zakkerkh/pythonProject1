@@ -20,6 +20,8 @@ else:
     print("Sorry that was wrong")
     print("the correct answer was", num1 + num2)
 
+num1 = random.randint(-6, 8)
+num2 = random.randint(-6, 8)
 print("What is", num1, "-", num2)
 question2 = float(input())
 if question2 == num1-num2:
@@ -32,6 +34,8 @@ else:
     print("Sorry that was wrong")
     print("the correct answer was", num1-num2)
 
+num1 = random.randint(-6, 8)
+num2 = random.randint(-6, 8)
 print("What is", num1, "*", num2)
 question3 = float(input())
 if question3 == num1*num2:
@@ -44,6 +48,8 @@ else:
     print("Sorry that was wrong")
     print("the correct answer was", num1 * num2)
 
+num1 = random.randint(-6, 8)
+num2 = random.randint(-6, 8)
 print("What is", num1, "**", num2)
 question4 = float(input())
 if question4 == num1**num2:
@@ -56,6 +62,8 @@ else:
     print("Sorry that was wrong")
     print("the correct answer was", num1 ** num2)
 
+num1 = random.randint(-6, 8)
+num2 = random.randint(-6, 8)
 print("What is", num1, "/", num2)
 question5 = float(input())
 if question5 == num1/num2:
@@ -68,6 +76,8 @@ else:
     print("Sorry that was wrong")
     print("the correct answer was", num1 / num2)
 
+num1 = random.randint(-6, 8)
+num2 = random.randint(-6, 8)
 print("What is", num1, "//", num2)
 question6 = float(input())
 if question6 == num1//num2:
@@ -80,6 +90,8 @@ else:
     print("Sorry that was wrong")
     print("the correct answer was", num1 // num2)
 
+num1 = random.randint(-6, 8)
+num2 = random.randint(-6, 8)
 print("What is", num1, "%", num2)
 question7 = float(input())
 if question7 == num1%num2:
