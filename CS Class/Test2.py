@@ -7,7 +7,7 @@ import random
 #This tells the user what the game is about
 print("Random number game")
 print("You'll have to guess a number between 100 and 150")
-print("You can get a hint if you'd like but you'll lose 20% of your points")
+print("You can get a hint if you'd like but you'll lose 20% of your points if you get it right")
 
 #This sets the answer to the game
 answer = random.randint(100, 150)
@@ -41,6 +41,8 @@ elif user_answer==answer+10 or user_answer==answer-10:
 elif user_answer==answer+15 or user_answer==answer-15:
     print("You got it wrong") #When they were 15 off
     print("You were 15 off")
+else:
+    print("You got it wrong, You were far off")
 
 #This determines their scores based on if they got it right and if they wanted the hint
 if hint=="y":
