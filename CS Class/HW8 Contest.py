@@ -119,121 +119,127 @@ operator2 = random.randint(1, 7)
 
 if challenge == "n":
     quit()
+
+elif not("y" or "n"):
+    print("invalid Entry")
+
 elif challenge == "y":
     if operator1 == 1:
         num4 = num1+num2
         if operator2 == 1:
-            print(num4+num3)
+            ans=(num4+num3)
         elif operator2 == 2:
-            print(num4-num3)
+            ans=(num4-num3)
         elif operator2 == 3:
-            print(num4 * num3)
+            ans=(num4 * num3)
         elif operator2 == 4:
-            print(num4 ** num3)
+            ans=(num4 ** num3)
         elif operator2 == 5:
-            print(num4 / num3)
+            ans=(num4 / num3)
         elif operator2 == 6:
-            print(num4 // num3)
+            ans=(num4 // num3)
         elif operator2 == 7:
-            print(num4 % num3)
+            ans=(num4 % num3)
     if operator1 == 2:
         num4 = num1-num2
         if operator2 == 1:
-            print(num4+num3)
+            ans=(num4+num3)
         elif operator2 == 2:
-            print(num4-num3)
+            ans=(num4-num3)
         elif operator2 == 3:
-            print(num4 * num3)
+            ans=(num4 * num3)
         elif operator2 == 4:
-            print(num4 ** num3)
+            ans=(num4 ** num3)
         elif operator2 == 5:
-            print(num4 / num3)
+            ans=(num4 / num3)
         elif operator2 == 6:
-            print(num4 // num3)
+            ans=(num4 // num3)
         elif operator2 == 7:
-            print(num4 % num3)
+            ans=(num4 % num3)
     if operator1 == 3:
         num4 = num1*num2
         if operator2 == 1:
-            print(num4+num3)
+            ans=(num4+num3)
         elif operator2 == 2:
-            print(num4-num3)
+            ans=(num4-num3)
         elif operator2 == 3:
-            print(num4 * num3)
+            ans=(num4 * num3)
         elif operator2 == 4:
-            print(num4 ** num3)
+            ans=(num4 ** num3)
         elif operator2 == 5:
-            print(num4 / num3)
+            ans=(num4 / num3)
         elif operator2 == 6:
-            print(num4 // num3)
+            ans=(num4 // num3)
         elif operator2 == 7:
-            print(num4 % num3)
+            ans=(num4 % num3)
     if operator1 == 4:
         num4 = num1**num2
         if operator2 == 1:
-            print(num4+num3)
+            ans=(num4+num3)
         elif operator2 == 2:
-            print(num4-num3)
+            ans=(num4-num3)
         elif operator2 == 3:
-            print(num4 * num3)
+            ans=(num4 * num3)
         elif operator2 == 4:
-            print(num4 ** num3)
+            ans=(num4 ** num3)
         elif operator2 == 5:
-            print(num4 / num3)
+            ans=(num4 / num3)
         elif operator2 == 6:
-            print(num4 // num3)
+            ans=(num4 // num3)
         elif operator2 == 7:
-            print(num4 % num3)
+            ans=(num4 % num3)
     if operator1 == 5:
         num4 = num1/num2
         if operator2 == 1:
-            print(num4+num3)
+            ans=(num4+num3)
         elif operator2 == 2:
-            print(num4-num3)
+            ans=(num4-num3)
         elif operator2 == 3:
-            print(num4 * num3)
+            ans=(num4 * num3)
         elif operator2 == 4:
-            print(num4 ** num3)
+            ans=(num4 ** num3)
         elif operator2 == 5:
-            print(num4 / num3)
+            ans=(num4 / num3)
         elif operator2 == 6:
-            print(num4 // num3)
+            ans=(num4 // num3)
         elif operator2 == 7:
-            print(num4 % num3)
+            ans=(num4 % num3)
     if operator1 == 6:
         num4 = num1//num2
         if operator2 == 1:
-            print(num4+num3)
+            ans=(num4+num3)
         elif operator2 == 2:
-            print(num4-num3)
+            ans=(num4-num3)
         elif operator2 == 3:
-            print(num4 * num3)
+            ans=(num4 * num3)
         elif operator2 == 4:
-            print(num4 ** num3)
+            ans=(num4 ** num3)
         elif operator2 == 5:
-            print(num4 / num3)
+            ans=(num4 / num3)
         elif operator2 == 6:
-            print(num4 // num3)
+            ans=(num4 // num3)
         elif operator2 == 7:
-            print(num4 % num3)
+            ans=(num4 % num3)
     if operator1 == 7:
         num4 = num1%num2
         if operator2 == 1:
-            print(num4+num3)
+            ans=(num4+num3)
         elif operator2 == 2:
-            print(num4-num3)
+            ans=(num4-num3)
         elif operator2 == 3:
-            print(num4 * num3)
+            ans=(num4 * num3)
         elif operator2 == 4:
-            print(num4 ** num3)
+            ans=(num4 ** num3)
         elif operator2 == 5:
-            print(num4 / num3)
+            ans=(num4 / num3)
         elif operator2 == 6:
-            print(num4 // num3)
+            ans=(num4 // num3)
         elif operator2 == 7:
-            print(num4 % num3)
-
+            ans=(num4 % num3)
+user_ans = int(input("What is the answer?: "))
+if user_ans==ans:
+    print("You got it right!")
 else:
-    print("invalid Entry")
-
+    print(ans)
+    print("That was wrong")
 
