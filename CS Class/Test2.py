@@ -8,6 +8,7 @@ import random
 print("Random number game")
 print("You'll have to guess a number between 100 and 150")
 print("You can get a hint if you'd like but you'll lose 20% of your points if you get it right")
+print("You have 1 try")
 
 #This sets the answer to the game
 answer = random.randint(100, 150)
