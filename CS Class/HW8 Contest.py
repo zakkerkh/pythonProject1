@@ -106,4 +106,17 @@ else:
 
 print(score, "/ 7")
 
+challenge = input("Would you like a challenge question y/n: ")
+
+if challenge=="n":
+    quit()
+elif challenge=="y":
+    num1 = random.randint(-6, 8)
+    num2 = random.randint(-6, 8)
+    num1 = random.randint(-6, 8)
+
+
+else:
+    print("invalid Entry")
+
 
