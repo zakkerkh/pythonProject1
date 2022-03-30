@@ -1,5 +1,5 @@
 import random
 
-operator1 = random.choice(ops)
+operator1 = *
 
-print(operator1)
+print(3 operator 14)
