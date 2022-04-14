@@ -143,5 +143,58 @@ if 1 < entry < 20 and 1 < entry2 < 20:
 
     print("Farewell")
 
+#While II
+#Question 1a
+num = 10
+while num != 0:
+    print(num - 2)
+    num = num - 2
+
+#Question 1b
+num = int(input("Enter a number greater than 1: "))
+if num % 2 != 0:
+    num = num + 1
+while num != 2:
+    print(num - 2)
+    num = num - 2
+
+#Question 1c
+num = int(input("Enter a 1st number: "))
+num2 = int(input("Enter a 2st number: "))
+diff = 0
+
+if num2 > num:
+    num, num2 = num2, num
+diff = num - num2
+
+while diff < 3:
+    print("The numbers are not 3 apart")
+    num = int(input("Enter a 1st number: "))
+    num2 = int(input("Enter a 2st number: "))
+    if num2 > num:
+        num, num2 = num2, num
+    diff = num - num2
+
+if num % 2 != 0:
+    num = num + 1
+
+while num != num2 + 2:
+    print(num - 2)
+    num = num - 2
+
+#Question 2
+mark = int(input("Enter a mark: "))
+good_grades = 0
+mark_count = 0
+while mark != -1:
+    mark = int(input("Enter a mark: "))
+    mark_count = mark_count + 1
+
+    if mark >= 70:
+        good_grades += 1
+
+if mark == -1:
+    print(good_grades/mark_count*100, "% of the marks are above 70%")
+
 
 
