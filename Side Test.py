@@ -1,14 +1,7 @@
-import random
-#Question 2a
-rand = random.randint(1, 30)
-print("the random number is", rand)
-print("Enter a number larger than", rand)
-entry = int(input())
+entry = int(input("Enter a number between 0-20"))
 while entry:
-    if entry >= rand+50:
-        entry = int(input("Invalid input, try again: "))
-    if entry <= rand:
-        entry = int(input("Sorry try again"))
-    elif entry > rand:
+    if entry > 20 or entry < 0:
+        entry = int(input("Enter a number between 0-20"))
+    elif 1 < entry < 20:
         print("goodjob")
         quit()

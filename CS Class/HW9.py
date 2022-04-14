@@ -56,12 +56,45 @@ print("the random number is", rand)
 print("Enter a number larger than", rand)
 entry = int(input())
 while entry:
-    if entry >= rand+50:
+    if entry >= 50:
         entry = int(input("Invalid input, try again: "))
     if entry <= rand:
         entry = int(input("Sorry try again"))
     elif entry > rand:
         print("goodjob")
+        max = entry
+        print("Enter a number greater than", rand, "but less than", max)
+        entry = int(input())
+        while entry:
+            if entry >= 50:
+                entry = int(input("Invalid input, try again: "))
+            if entry <= rand:
+                entry = int(input("Sorry try again"))
+            elif max > entry > rand:
+                print("goodjob")
+
+#Question 3a
+entry = int(input("Enter a number between 0-20"))
+while entry:
+    if 1 > entry > 20:
+        entry = int(input("Enter a number between 0-20"))
+    elif 1 < entry < 20:
+        print("goodjob")
         quit()
+
+#Question 3b
+entry = int(input("Enter a number between 0-20"))
+count = 0
+times_displayed = 0
+while entry:
+    if 1 > entry > 20:
+        count =+ 1
+        entry = int(input("Enter a number between 0-20"))
+    elif 1 < entry < 20:
+        while count:
+            if count != 0:
+                print(1+times_displayed)
+                count =- 0
+        print("goodjob")
 
 
