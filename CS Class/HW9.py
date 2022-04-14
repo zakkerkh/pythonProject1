@@ -94,7 +94,7 @@ while entry:
         while count:
             if count != 0:
                 print(1+times_displayed)
-                count =- 0
+                count =- 1
         print("goodjob")
 
 
