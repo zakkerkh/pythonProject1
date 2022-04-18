@@ -1,32 +1,26 @@
-#Question 3
-num = int(input("Enter a number greater than 0:"))
-count = 0
-ans = "="
+#Zakariyah. M. J. Khan
+#ICS2O_2122_S2
+#13/04/2022
+#Hello, how are you doing
 
-while num <= 0:
-    num = int(input("Enter a number greater than 0: "))
+num1 = int(input("First starting number: "))
+num2 = int(input("Second starting number: "))
 
-num = str(num)
-print(num + "!")
+print("The necklace is: ")
+print(num1)
+print(num2)
 
-count = int(num)
-while count != 0:
-    if count == 1:
-        temp_count = str(count)
-        ans = ans + temp_count
-        count = count - 1
-        print(ans)
-    else:
-        temp_count = str(count)
-        ans = ans + temp_count + "*"
-        count = count - 1
+var1 = (num1 + num2) % 10
+var2 = (var1 + num2) % 10
 
-num = int(num)
-count1 = num
-num_ans = num
+print(var1)
+print(var2)
 
-while count1 != 1:
-    num_ans = num_ans*(count1-1)
-    count1 -= 1
-
-print("=" + str(num_ans))
+while var1 and var2:
+    if var1 != num1 or var2 != num2:
+        var1 = (var1 + var2) % 10
+        var2 = (var1 + var2) % 10
+        print(var1)
+        print(var2)
+    elif var1 == num1 and var2 == num2:
+        quit()
