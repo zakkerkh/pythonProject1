@@ -24,4 +24,3 @@ while var1 and var2:
         print(var2)
     elif var1 == num1 and var2 == num2:
         quit()
-F
