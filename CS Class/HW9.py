@@ -196,5 +196,113 @@ while mark != -1:
 if mark == -1:
     print(good_grades/mark_count*100, "% of the marks are above 70%")
 
+#Question 3
+num = int(input("Enter a number greater than 0:"))
+count = 0
+ans = "="
+
+while num <= 0:
+    num = int(input("Enter a number greater than 0: "))
+
+num = str(num)
+print(num + "!")
+
+count = int(num)
+while count != 0:
+    if count == 1:
+        temp_count = str(count)
+        ans = ans + temp_count
+        count = count - 1
+        print(ans)
+    else:
+        temp_count = str(count)
+        ans = ans + temp_count + "*"
+        count = count - 1
+
+num = int(num)
+count1 = num
+num_ans = num
+
+while count1 != 1:
+    num_ans = num_ans*(count1-1)
+    count1 -= 1
+
+print("=" + str(num_ans))
+
+#Question 4
+day = int(input("What day of the week is it? 1-Sun, 2-Mon, 3-Tues, 4-Wed, 5-Thur, 6-Fri, 7-Sat or 8-Vacation: "))
+
+while day:
+    if day == 1 or day == 7 or day == 8:
+        print("You can sleep in")
+        day = int(input("What day of the week is it? 1-Sun, 2-Mon, 3-Tues, 4-Wed, 5-Thur, 6-Fri, 7-Sat or 8-Vacation: "))
+    if day == 2 or day == 3 or day == 4 or day == 5 or day == 6:
+        print("You cannot sleep in")
+        day = int(input("What day of the week is it? 1-Sun, 2-Mon, 3-Tues, 4-Wed, 5-Thur, 6-Fri, 7-Sat or 8-Vacation: "))
+    if day == 0:
+        quit()
+
+#Question 5
+num = int(input("First number: "))
+num1 = int(input("Second number: "))
+
+while num and num1:
+    if num != num1:
+        print(num+num1)
+        num = int(input("First number: "))
+        num1 = int(input("Second number: "))
+    if num == num1:
+        print(2*(num+num1))
+        num = int(input("First number: "))
+        num1 = int(input("Second number: "))
+    if num and num1 == 0:
+        quit()
+
+#Question 6
+num = random.randint(0, 30)
+entry = int(input("Guess a number between 0 and 30: "))
+score = 0
+while entry and num:
+    if entry >= num-2 and entry <= num+2:
+        print("AMAZING")
+        score += 6
+        print(score)
+        redo = input("Would you like to play again? y/n: ")
+        if redo == "y":
+            num = random.randint(0, 30)
+            entry = int(input("Guess a number between 0 and 30: "))
+        elif redo == "n":
+            quit()
+    if entry >= num-5 and entry <= num+5:
+        print("Wow!")
+        score += 4
+        print(score)
+        redo = input("Would you like to play again? y/n: ")
+        if redo == "y":
+            num = random.randint(0, 30)
+            entry = int(input("Guess a number between 0 and 30: "))
+        elif redo == "n":
+            quit()
+
+    if entry >= num-10 and entry <= num+10:
+        print("Good Job")
+        score += 2
+        print(score)
+        redo = input("Would you like to play again? y/n: ")
+        if redo == "y":
+            num = random.randint(0, 30)
+            entry = int(input("Guess a number between 0 and 30: "))
+        elif redo == "n":
+            quit()
+    else:
+        print(score)
+        redo = input("Would you like to play again? y/n: ")
+        if redo == "y":
+            num = random.randint(0, 30)
+            entry = int(input("Guess a number between 0 and 30: "))
+        elif redo == "n":
+            quit()
+
+
 
 
