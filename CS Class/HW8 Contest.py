@@ -64,6 +64,8 @@ else:
 
 num1 = random.randint(-6, 8)
 num2 = random.randint(-6, 8)
+while num2 == 0:
+    num2 = random.randint(-6, 8)
 print("What is", num1, "/", num2)
 question5 = float(input())
 if question5 == num1/num2:
@@ -78,6 +80,8 @@ else:
 
 num1 = random.randint(-6, 8)
 num2 = random.randint(-6, 8)
+while num2 == 0:
+    num2 = random.randint(-6, 8)
 print("What is", num1, "//", num2)
 question6 = float(input())
 if question6 == num1//num2:
@@ -123,123 +127,207 @@ if challenge == "n":
 elif not("y" or "n"):
     print("invalid Entry")
 
-elif challenge == "y":
+while challenge == "y" or redo == 1:
+    challenge = "blah"
     if operator1 == 1:
         num4 = num1+num2
         if operator2 == 1:
             ans=(num4+num3)
+            print(str(num1) + "+" + str(num2) + "+" + str(num3))
         elif operator2 == 2:
             ans=(num4-num3)
+            print(str(num1) + "+" + str(num2) + "-" + str(num3))
         elif operator2 == 3:
             ans=(num4 * num3)
+            print(str(num1) + "+" + str(num2) + "*" + str(num3))
         elif operator2 == 4:
             ans=(num4 ** num3)
+            print(str(num1) + "+" + str(num2) + "^" + str(num3))
         elif operator2 == 5:
             ans=(num4 / num3)
+            print(str(num1) + "+" + str(num2) + "/" + str(num3))
         elif operator2 == 6:
+            while num3 == 0:
+                num3 = random.randint(-6, 8)
             ans=(num4 // num3)
+            print(str(num1) + "+" + str(num2) + "//" + str(num3))
         elif operator2 == 7:
+            while num3 == 0:
+                num3 = random.randint(-6, 8)
             ans=(num4 % num3)
+            print(str(num1) + "+" + str(num2) + "%" + str(num3))
     if operator1 == 2:
         num4 = num1-num2
         if operator2 == 1:
             ans=(num4+num3)
+            print(str(num1) + "-" + str(num2) + "+" + str(num3))
         elif operator2 == 2:
             ans=(num4-num3)
+            print(str(num1) + "-" + str(num2) + "-" + str(num3))
         elif operator2 == 3:
             ans=(num4 * num3)
+            print(str(num1) + "-" + str(num2) + "*" + str(num3))
         elif operator2 == 4:
             ans=(num4 ** num3)
+            print(str(num1) + "-" + str(num2) + "^" + str(num3))
         elif operator2 == 5:
+            while num3 == 0:
+                num3 = random.randint(-6, 8)
             ans=(num4 / num3)
+            print(str(num1) + "-" + str(num2) + "/" + str(num3))
         elif operator2 == 6:
+            while num3 == 0:
+                num3 = random.randint(-6, 8)
             ans=(num4 // num3)
+            print(str(num1) + "-" + str(num2) + "//" + str(num3))
         elif operator2 == 7:
             ans=(num4 % num3)
+            print(str(num1) + "-" + str(num2) + "%" + str(num3))
     if operator1 == 3:
         num4 = num1*num2
         if operator2 == 1:
             ans=(num4+num3)
+            print(str(num1) + "*" + str(num2) + "+" + str(num3))
         elif operator2 == 2:
             ans=(num4-num3)
+            print(str(num1) + "*" + str(num2) + "-" + str(num3))
         elif operator2 == 3:
             ans=(num4 * num3)
+            print(str(num1) + "*" + str(num2) + "*" + str(num3))
         elif operator2 == 4:
             ans=(num4 ** num3)
+            print(str(num1) + "*" + str(num2) + "^" + str(num3))
         elif operator2 == 5:
+            while num3 == 0:
+                num3 = random.randint(-6, 8)
             ans=(num4 / num3)
+            print(str(num1) + "*" + str(num2) + "/" + str(num3))
         elif operator2 == 6:
+            while num3 == 0:
+                num3 = random.randint(-6, 8)
             ans=(num4 // num3)
+            print(str(num1) + "*" + str(num2) + "//" + str(num3))
         elif operator2 == 7:
             ans=(num4 % num3)
+            print(str(num1) + "*" + str(num2) + "%" + str(num3))
     if operator1 == 4:
         num4 = num1**num2
         if operator2 == 1:
             ans=(num4+num3)
+            print(str(num1) + "^" + str(num2) + "+" + str(num3))
         elif operator2 == 2:
             ans=(num4-num3)
+            print(str(num1) + "^" + str(num2) + "-" + str(num3))
         elif operator2 == 3:
             ans=(num4 * num3)
+            print(str(num1) + "^" + str(num2) + "*" + str(num3))
         elif operator2 == 4:
             ans=(num4 ** num3)
+            print(str(num1) + "^" + str(num2) + "^" + str(num3))
         elif operator2 == 5:
+            while num3 == 0:
+                num3 = random.randint(-6, 8)
             ans=(num4 / num3)
+            print(str(num1) + "^" + str(num2) + "/" + str(num3))
         elif operator2 == 6:
+            while num3 == 0:
+                num3 = random.randint(-6, 8)
             ans=(num4 // num3)
+            print(str(num1) + "^" + str(num2) + "//" + str(num3))
         elif operator2 == 7:
             ans=(num4 % num3)
+            print(str(num1) + "^" + str(num2) + "%" + str(num3))
     if operator1 == 5:
         num4 = num1/num2
         if operator2 == 1:
             ans=(num4+num3)
+            print(str(num1) + "/" + str(num2) + "+" + str(num3))
         elif operator2 == 2:
             ans=(num4-num3)
+            print(str(num1) + "/" + str(num2) + "-" + str(num3))
         elif operator2 == 3:
             ans=(num4 * num3)
+            print(str(num1) + "/" + str(num2) + "*" + str(num3))
         elif operator2 == 4:
             ans=(num4 ** num3)
+            print(str(num1) + "/" + str(num2) + "^" + str(num3))
         elif operator2 == 5:
+            while num3 == 0:
+                num3 = random.randint(-6, 8)
             ans=(num4 / num3)
+            print(str(num1) + "/" + str(num2) + "/" + str(num3))
         elif operator2 == 6:
+            while num3 == 0:
+                num3 = random.randint(-6, 8)
             ans=(num4 // num3)
+            print(str(num1) + "/" + str(num2) + "//" + str(num3))
         elif operator2 == 7:
             ans=(num4 % num3)
+            print(str(num1) + "/" + str(num2) + "%" + str(num3))
     if operator1 == 6:
+        while num2 == 0:
+            num2 = random.randint(-6, 8)
         num4 = num1//num2
         if operator2 == 1:
             ans=(num4+num3)
+            print(str(num1) + "//" + str(num2) + "+" + str(num3))
         elif operator2 == 2:
             ans=(num4-num3)
+            print(str(num1) + "//" + str(num2) + "-" + str(num3))
         elif operator2 == 3:
             ans=(num4 * num3)
+            print(str(num1) + "//" + str(num2) + "*" + str(num3))
         elif operator2 == 4:
             ans=(num4 ** num3)
+            print(str(num1) + "//" + str(num2) + "^" + str(num3))
         elif operator2 == 5:
+            while num3 == 0:
+                num3 = random.randint(-6, 8)
             ans=(num4 / num3)
+            print(str(num1) + "//" + str(num2) + "/" + str(num3))
         elif operator2 == 6:
+            while num3 == 0:
+                num3 = random.randint(-6, 8)
             ans=(num4 // num3)
+            print(str(num1) + "//" + str(num2) + "//" + str(num3))
         elif operator2 == 7:
             ans=(num4 % num3)
+            print(str(num1) + "//" + str(num2) + "%" + str(num3))
     if operator1 == 7:
         num4 = num1%num2
         if operator2 == 1:
             ans=(num4+num3)
+            print(str(num1) + "%" + str(num2) + "+" + str(num3))
         elif operator2 == 2:
             ans=(num4-num3)
+            print(str(num1) + "%" + str(num2) + "-" + str(num3))
         elif operator2 == 3:
             ans=(num4 * num3)
+            print(str(num1) + "%" + str(num2) + "*" + str(num3))
         elif operator2 == 4:
             ans=(num4 ** num3)
+            print(str(num1) + "%" + str(num2) + "^" + str(num3))
         elif operator2 == 5:
+            while num3 == 0:
+                num3 = random.randint(-6, 8)
             ans=(num4 / num3)
+            print(str(num1) + "%" + str(num2) + "/" + str(num3))
         elif operator2 == 6:
+            while num3 == 0:
+                num3 = random.randint(-6, 8)
             ans=(num4 // num3)
+            print(str(num1) + "%" + str(num2) + "//" + str(num3))
         elif operator2 == 7:
             ans=(num4 % num3)
-user_ans = int(input("What is the answer?: "))
-if user_ans==ans:
-    print("You got it right!")
-else:
-    print(ans)
-    print("That was wrong")
+            print(str(num1) + "%" + str(num2) + "%" + str(num3))
+
+        user_ans = int(input("What is the answer?: "))
+        if user_ans==ans:
+            print("You got it right!")
+            redo = int(input("Would you like to play again? 1- Yes 2 -No: "))
+        else:
+            print(ans)
+            print("That was wrong")
+            redo = int(input("Would you like to play again? 1- Yes 2 -No: "))
+
 
