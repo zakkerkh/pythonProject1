@@ -4,4 +4,5 @@
 #Hello, how are you doing
 
 number = "123"
+print(number +2)
 print(number[1]*3+2)
