@@ -1,15 +1,21 @@
-#2
-word1 = input("A Enter at least 2 characters: ")
-while word1:
-    while len(word1) < 2:
-        word1 = input("A Enter at least 2 characters: ")
-    if word1 != "Exit":
-        print((word1[-2] + word1[-1]) * 5)
-        word2 = input("A Enter at least 4 characters: ")
-        while word2:
-            while len(word2) < 2:
-                word1 = input("A Enter at least 2 characters: ")
-            if word1 != "Exit":
-                print((word2[-2] + word2[-1]) * 5)
+work = "shfdhfkdshfjkd"
+entry = "kfgjkdshf"
+del_count = 0
 
-
+if len(entry) >= 5:
+    if (work[0] and work[1] and work[2] and work[3]) == work[4]:
+        entry = entry[del_count+5:]
+elif len(entry) >= 4:
+    elif (work[0] and work[1] and work[2]) == work[3]:
+        entry = entry[del_count+4: ]
+elif len(entry) >= 3:
+    elif (work[0] and work[1]) == work[2]:
+        entry = entry[del_count+4:]
+elif len(entry) >= 2:
+    else:
+        work = work[1:]
+        del_count += 1
+elif len(entry) >= 1:
+    else:
+        work = work[1:]
+        del_count += 1
