@@ -4,8 +4,10 @@ count = 0
 count1 = 0
 points = 0
 redo = "y"
-list = ""
+list = "You entered: " + entry
 
+right = "You got it right! "
+wrong = "You got it wrong... "
 while redo == "y":
     while count < 10:
         if len(entry) >= 3 and entry[0] == entry[1] == entry[2]:
@@ -27,13 +29,15 @@ while redo == "y":
         count += 1
 
     print(entry)
-    list = list, "entry"
+    list = list + " the answer is " + entry
 
     if guess == entry:
-        print("You got it right")
+        print(right)
+        list += " " + right + ","
         points += 1
     else:
-        print("You got it wrong")
+        print(wrong)
+        list += wrong + ","
 
     redo = input("Would you like to play again? y/n: ")
     if redo == "y":
@@ -41,6 +45,6 @@ while redo == "y":
         guess = input("Guess what the output will be all consecutive triplets are removed")
         count = 0
         count1 = 0
+        list += "You entered: " + entry + ":"
 
-
-
+print("Final results: " + list)
