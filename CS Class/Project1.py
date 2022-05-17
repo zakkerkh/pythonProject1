@@ -23,14 +23,15 @@ if redo == "y":
         print("Invalid Input: Entry has a limit of 10 characters")
         entry = input("Enter a string up to 10 characters long: ")
     guess = input("What is you guess: ")
+
     count = 0
     count1 = 0
     points = 0
     redo = "y"
-    list = "You entered: " + entry
+    list = "You entered: " + entry + " Your guess was " + guess
 
-    right = " You got it right!"
-    wrong = " You got it wrong..."
+    right = "You got it right!"
+    wrong = "You got it wrong..."
 
 while redo == "y":
     while count < 10:
@@ -89,7 +90,7 @@ if len(final) != 0:#15
 
     num = 2#random.randint(1, 3)
     if num == 2:
-        print("Secret level \n")
+        print("SECRET LEVEL \n")
         print("**booting**")
         print("AI: **initializing**")
         print("AI: I've immerged")
@@ -114,6 +115,9 @@ if len(final) != 0:#15
         while hard == "y" and count != 20:
             count += 1
             entry = input("Enter your daring string: ")
+
+            list = "You entered: " + entry + " Your guess was " + guess
+
             if len(entry) < 15 and len(entry) > 0:
                 print("I see you are going the easy route")
             guess = input("What is you guess: ")
@@ -147,16 +151,21 @@ if len(final) != 0:#15
 
             if guess == entry:
                 points += 2
+                list += " " + right
+            else:
+                list += " " + wrong
 
             print(entry)
             hard = input("Do you dare to play again? y/n:")
+            count = 0
             while hard != "y" and hard != "n":
                 print("Invalid Input")
                 redo = input("Do you dare to play again? y/n:")
+                count = 0
             if hard == "n":
                 print("Very well")
                 print("AI: **power down**")
 
-
+print(list)
 print("\nThank you for running the Candy Crushinator")
 print("Goodbye")
