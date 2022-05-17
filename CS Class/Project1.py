@@ -9,8 +9,8 @@ print("Made by Zakariyah Khan")
 print("In this game, you will inpute a string upto 10 characters long. You will then guess what the output will be after all consecutive triplets are removed \n")
 redo = input("Are you ready? y/n: ")
 
-while redo != "y" or redo != "n":
-    print("invalid Inputtttt")
+while redo != "y" and redo != "n":
+    print("Invalid Input")
     redo = input("Are you ready? y/n: ")
 list = ""
 count = 0
