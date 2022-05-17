@@ -1,13 +1,17 @@
-entry = input("Enter a 7 character number string: ")
-guess = input("Guess what the output will be all consecutive triplets are removed: ")
-count = 0
-count1 = 0
-points = 0
-redo = "y"
-list = "You entered: " + entry
+print("Welcome to the Candy Crushinator Game")
+print("In this game, you will inpute a string upto 10 characters long. You will then guess what the output will be after all consecutive triplets are removed")
+redo = input("Are you ready? y/n: ")
+if redo == "y":
+    entry = input("Enter a string up to 10 characters long: ")
+    guess = input("What is you guess: ")
+    count = 0
+    count1 = 0
+    points = 0
+    redo = "y"
+    list = "You entered: " + entry
 
-right = "You got it right! "
-wrong = "You got it wrong... "
+    right = "You got it right! "
+    wrong = "You got it wrong... "
 while redo == "y":
     while count < 10:
         if len(entry) >= 3 and entry[0] == entry[1] == entry[2]:
@@ -25,17 +29,14 @@ while redo == "y":
         elif len(entry) >= 7 and entry[4] == entry[5] == entry[6]:
             entry = entry[0:4] + entry[7:]
             count1 += 1
-        elif len(entry) >= 7 and entry[4] == entry[5] == entry[6]: #Start here
-            entry = entry[0:4] + entry[7:]
+        elif len(entry) >= 8 and entry[5] == entry[6] == entry[7]: #Start here
+            entry = entry[0:5] + entry[8:]
             count1 += 1
-        elif len(entry) >= 7 and entry[4] == entry[5] == entry[6]:
-            entry = entry[0:4] + entry[7:]
+        elif len(entry) >= 9 and entry[6] == entry[7] == entry[8]:
+            entry = entry[0:6] + entry[9:]
             count1 += 1
-        elif len(entry) >= 7 and entry[4] == entry[5] == entry[6]:
-            entry = entry[0:4] + entry[7:]
-            count1 += 1
-        elif len(entry) >= 7 and entry[4] == entry[5] == entry[6]:
-            entry = entry[0:4] + entry[7:]
+        elif len(entry) >= 10 and entry[7] == entry[8] == entry[9]:
+            entry = entry[0:7] + entry[10:]
             count1 += 1
         count += 1
 
@@ -52,10 +53,11 @@ while redo == "y":
 
     redo = input("Would you like to play again? y/n: ")
     if redo == "y":
-        entry = input("Enter a 7 character number string: ")
+        entry = input("Enter a string up to 10 characters long: ")
         guess = input("Guess what the output will be all consecutive triplets are removed: ")
         count = 0
         count1 = 0
         list += "You entered: " + entry + ":"
 
 print("Final results: " + list)
+print("Your final score is: " + points)

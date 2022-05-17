@@ -3,27 +3,88 @@
 #12/05/2022
 #Hello, how are you doing
 
-entry = input("What are you letters?")
-work = entry
-del_count = 0
+print("Welcome to the Candy Crushinator Game \n")
+print("Made by Zakariyah Khan")
+print("In this game, you will inpute a string upto 10 characters long. You will then guess what the output will be after all consecutive triplets are removed \n")
+redo = input("Are you ready? y/n: ")
 
-if (work[0] and work[1] and work[2] and work[3]) == work[4]:
-    entry = entry[del_count+5:]
-elif (work[0] and work[1] and work[2]) == work[3]:
-    entry = entry[del_count+4:]
-elif (work[0] and work[1]) == work[2]:
-    entry = entry[del_count+4:]
-else:
-    work = work[1:]
-    del_count += 1
+while redo != ("y" or "n"):
+    print("invalid Input")
+    redo = input("Are you ready? y/n: ")
+list = ""
+count = 0
+count1 = 0
+points = 0
 
-if (work[0] and work[1] and work[2] and work[3]) == work[4]:
-    entry = entry[del_count+5:]
-elif (work[0] and work[1] and work[2]) == work[3]:
-    entry = entry[del_count+4:]
-elif (work[0] and work[1]) == work[2]:
-    entry = entry[del_count+4:]
-else:
-    work = work[1:]
+if redo == "y":
+    entry = input("Enter a string up to 10 characters long: ")
+    while len(entry) > 10:
+        print("Invalid Input: Entry has a limit of 10 characters")
+        entry = input("Enter a string up to 10 characters long: ")
+    guess = input("What is you guess: ")
+    count = 0
+    count1 = 0
+    points = 0
+    redo = "y"
+    list = "You entered: " + entry
 
-print(work)
+    right = " You got it right!"
+    wrong = " You got it wrong..."
+
+while redo == "y":
+    while count < 10:
+        if len(entry) >= 3 and entry[0] == entry[1] == entry[2]:
+            entry = entry[3:]
+            count1 += 1
+        elif len(entry) >= 4 and entry[1] == entry[2] == entry[3]:
+            entry = entry[0:1] + entry[4:]
+            count1 += 1
+        elif len(entry) >= 5 and entry[2] == entry[3] == entry[4]:
+            entry = entry[0:2] + entry[5:]
+            count1 += 1
+        elif len(entry) >= 6 and entry[3] == entry[4] == entry[5]:
+            entry = entry[0:3] + entry[6:]
+            count1 += 1
+        elif len(entry) >= 7 and entry[4] == entry[5] == entry[6]:
+            entry = entry[0:4] + entry[7:]
+            count1 += 1
+        elif len(entry) >= 8 and entry[5] == entry[6] == entry[7]: #Start here
+            entry = entry[0:5] + entry[8:]
+            count1 += 1
+        elif len(entry) >= 9 and entry[6] == entry[7] == entry[8]:
+            entry = entry[0:6] + entry[9:]
+            count1 += 1
+        elif len(entry) >= 10 and entry[7] == entry[8] == entry[9]:
+            entry = entry[0:7] + entry[10:]
+            count1 += 1
+        count += 1
+
+    print(entry)
+    list = list + " the answer is " + entry + " "
+
+    if guess == entry:
+        print("\n" + right + "\n")
+        list += " " + right + "|"
+        points += 1
+    else:
+        print("\n" + wrong + "\n")
+        list += wrong + "|"
+
+    redo = input("Would you like to play again? y/n: ")
+    if redo == "y":
+        entry = input("Enter a string up to 10 characters long: ")
+        while len(entry) > 10:
+            print("Invalid Input: Entry has a limit of 10 characters")
+            entry = input("Enter a string up to 10 characters long: ")
+        guess = input("Your guess?: ")
+        count = 0
+        count1 = 0
+        list += "You entered: " + entry + ":"
+
+final = "Final results: " + list
+if len(final) != 15:
+    print(final)
+    print("Your final score is:", points)
+
+print("Thank you for running the Candy Crushinator")
+print("Goodbye")
