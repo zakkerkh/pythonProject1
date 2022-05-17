@@ -1,3 +1,3 @@
-import random
 
-print(random.randint(10*99**10, 10*99**11))
+count = "aaabbdddkssss"
+print(count.replace("aaa", ""))

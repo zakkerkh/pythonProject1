@@ -83,36 +83,80 @@ while redo == "y":
         list += "You entered: " + entry + ":"
 
 final = "Final results: " + list
-if len(final) != 15:
+if len(final) != 0:#15
     print(final)
     print("Your final score is:", points)
 
-    num = random.randint(1, 3)
+    num = 2#random.randint(1, 3)
     if num == 2:
         print("Secret level \n")
         print("**booting**")
-        print(random.randint(10 * 99 ** 10000000, 10 * 99 ** 10000001))
         print("AI: **initializing**")
         print("AI: I've immerged")
         print("AI: You are one of the few to unlock the true power of the Candy Crushinator game...")
         print("AI: Are you ready for the challenge?")
         hard = input("AI: Would you like to unlock the secret level? y/n: ")
-        while hard != ("y" or "n"):
+        while hard != "y" and hard != "n":
             print("invalid Input")
             hard = input("AI: Would you like to unlock the secret level? y/n: ")
         if hard == "n":
             print("AI: It seems as though you are not up to the challenge, but do not feel ashamed as most are not fit")
         if hard == "y":
-            print("AI: I am surprised, you are brave now. Let's see how you are later. My friends Siri, Alexa and Google Assistant are watching you with NFT popcorn.")
-            print("With this level the characters are unlimited and you have to remove quadruplets")
+            print("\nAI: I am surprised, you are brave now. Let's see how you are later. My friends Siri, Alexa and Google Assistant are watching you with NFT popcorn.")
+            print("\nWith this level the characters are unlimited and you have to remove quadruplets")
             hard = input("AI: Are you still sure that you want to play? y/n: ")
-        while hard != ("y" or "n"):
+        while hard != "y" and hard != "n":
             print("invalid Input")
             hard = input("AI: Are you still sure that you want to play? y/n: ")
         if hard == "n":
             print("AI: I thought so")
             print("AI: **power down**")
+        while hard == "y" and count != 20:
+            count += 1
+            entry = input("Enter your daring string: ")
+            if len(entry) < 15 and len(entry) > 0:
+                print("I see you are going the easy route")
+            guess = input("What is you guess: ")
+
+            entry = entry.replace("aaaa", "")
+            entry = entry.replace("bbbb", "")
+            entry = entry.replace("cccc", "")
+            entry = entry.replace("dddd", "")
+            entry = entry.replace("eeee", "")
+            entry = entry.replace("ffff", "")
+            entry = entry.replace("gggg", "")
+            entry = entry.replace("hhhh", "")
+            entry = entry.replace("iiii", "")
+            entry = entry.replace("jjjj", "")
+            entry = entry.replace("kkkk", "")
+            entry = entry.replace("llll", "")
+            entry = entry.replace("mmmm", "")
+            entry = entry.replace("nnnn", "")
+            entry = entry.replace("oooo", "")
+            entry = entry.replace("pppp", "")
+            entry = entry.replace("qqqq", "")
+            entry = entry.replace("rrrr", "")
+            entry = entry.replace("ssss", "")
+            entry = entry.replace("tttt", "")
+            entry = entry.replace("uuuu", "")
+            entry = entry.replace("vvvv", "")
+            entry = entry.replace("wwww", "")
+            entry = entry.replace("xxxx", "")
+            entry = entry.replace("yyyy", "")
+            entry = entry.replace("zzzz", "")
+
+            if guess == entry:
+                points += 2
+
+            print(entry)
+            hard = input("Do you dare to play again? y/n:")
+            while hard != "y" and hard != "n":
+                print("Invalid Input")
+                redo = input("Do you dare to play again? y/n:")
+            if hard == "n":
+                print("Very well")
+                print("AI: **power down**")
 
 
-print("Thank you for running the Candy Crushinator")
+print("\nThank you for running the Candy Crushinator")
 print("Goodbye")
