@@ -1,5 +1,5 @@
-entry = input("Enter a 7 character number string:")
-guess = input("Guess what the output will be all consecutive triplets are removed")
+entry = input("Enter a 7 character number string: ")
+guess = input("Guess what the output will be all consecutive triplets are removed: ")
 count = 0
 count1 = 0
 points = 0
@@ -25,7 +25,18 @@ while redo == "y":
         elif len(entry) >= 7 and entry[4] == entry[5] == entry[6]:
             entry = entry[0:4] + entry[7:]
             count1 += 1
-
+        elif len(entry) >= 7 and entry[4] == entry[5] == entry[6]: #Start here
+            entry = entry[0:4] + entry[7:]
+            count1 += 1
+        elif len(entry) >= 7 and entry[4] == entry[5] == entry[6]:
+            entry = entry[0:4] + entry[7:]
+            count1 += 1
+        elif len(entry) >= 7 and entry[4] == entry[5] == entry[6]:
+            entry = entry[0:4] + entry[7:]
+            count1 += 1
+        elif len(entry) >= 7 and entry[4] == entry[5] == entry[6]:
+            entry = entry[0:4] + entry[7:]
+            count1 += 1
         count += 1
 
     print(entry)
@@ -41,8 +52,8 @@ while redo == "y":
 
     redo = input("Would you like to play again? y/n: ")
     if redo == "y":
-        entry = input("Enter a 7 character number string:")
-        guess = input("Guess what the output will be all consecutive triplets are removed")
+        entry = input("Enter a 7 character number string: ")
+        guess = input("Guess what the output will be all consecutive triplets are removed: ")
         count = 0
         count1 = 0
         list += "You entered: " + entry + ":"
