@@ -2,6 +2,7 @@
 #ICS2O_2122_S2
 #12/05/2022
 #Hello, how are you doing
+import random
 
 print("Welcome to the Candy Crushinator Game \n")
 print("Made by Zakariyah Khan")
@@ -86,5 +87,16 @@ if len(final) != 15:
     print(final)
     print("Your final score is:", points)
 
+    num = random.randint(1, 3)
+    if num == 2:
+        print("Secret level \n")
+        print("You are one of the few to unlock the true power of the Candy Crushinator game...")
+        print("Are you ready for the challenge?")
+        hard = input("Would you like to unlock the secret level? y/n: ")
+        while hard != ("y" or "n"):
+            print("invalid Input")
+            hard = input("Would you like to unlock the secret level? y/n: ")
+        if hard == "n":
+            print("It seems as though you are not up to the challenge, a weakling. But do not feels ahmed as most are weaklings")
 print("Thank you for running the Candy Crushinator")
 print("Goodbye")
