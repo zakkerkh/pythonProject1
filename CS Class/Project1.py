@@ -52,7 +52,7 @@ while redo == "y":
         elif len(entry) >= 7 and entry[4] == entry[5] == entry[6]:
             entry = entry[0:4] + entry[7:]
             count1 += 1
-        elif len(entry) >= 8 and entry[5] == entry[6] == entry[7]: #Start here
+        elif len(entry) >= 8 and entry[5] == entry[6] == entry[7]:
             entry = entry[0:5] + entry[8:]
             count1 += 1
         elif len(entry) >= 9 and entry[6] == entry[7] == entry[8]:
@@ -68,11 +68,11 @@ while redo == "y":
 
     if guess == entry:
         print("\n" + right + "\n")
-        list += " " + right + "|"
+        list += right + "|||"
         points += 1
     else:
         print("\n" + wrong + "\n")
-        list += wrong + "|"
+        list += wrong + "|||"
 
     redo = input("Would you like to play again? y/n: ")
     if redo == "y":
@@ -122,7 +122,7 @@ if len(final) != 0:#15:
             print("I see you are going the easy route")
 
         while hard == "y" and not complete:
-            list = "You entered: " + entry + " Your guess was: " + guess
+            list = "You entered: " + entry + " --- Your guess was: " + guess + " ---"
 
             #print("filtering")
             entry1 = entry
@@ -159,11 +159,11 @@ if len(final) != 0:#15:
                 if guess == entry:
                     print(right)
                     points += 2
-                    list += " " + right +"|"
+                    list += " " + right +"|||"
                 else:
                     print(wrong)
                     print("AI: Hahahaha")
-                    list += " " + wrong
+                    list += " " + wrong + "|||"
                 if len(entry) == 0:
                     print("(Blank)")
                 else:
