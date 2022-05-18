@@ -4,6 +4,8 @@
 #Hello, how are you doing
 import random
 
+#To force activate the secret level, change line 90 value from 15 to 0 and change line 94 value to 2 instead of the random integer
+
 print("Welcome to the Candy Crushinator Game \n")
 print("Made by Zakariyah Khan")
 print("In this game, you will input a string upto 10 characters long. You will then guess what the output will be after all consecutive triplets are removed \n")
@@ -64,7 +66,7 @@ while redo == "y":
         count += 1
 
     print(entry)
-    list = list + ". The answer is: " + entry + ". "
+    list += ". The answer is: " + entry + ". "
 
     if guess == entry:
         print("\n" + right + "\n")
@@ -86,11 +88,11 @@ while redo == "y":
         list += "You entered: " + entry + ":"
 
 final = "Final results: " + list
-if len(final) != 0:#15:
+if len(final) != 15:
     print(final)
     print("Your final score is:", points)
 
-    num = 2#random.randint(1, 3)
+    num = random.randint(1, 3)
     if num == 2:
         print("SECRET LEVEL \n")
         print("**booting**")
@@ -122,7 +124,7 @@ if len(final) != 0:#15:
             print("\nI see you are going the easy route")
 
         while hard == "y" and not complete:
-            list = "You entered: " + entry + " --- Your guess was: " + guess + " ---"
+            list += "You entered: " + entry + " --- Your guess was: " + guess + " ---"
 
             #print("filtering")
             entry1 = entry
