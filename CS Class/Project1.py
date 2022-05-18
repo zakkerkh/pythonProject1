@@ -6,14 +6,18 @@ import random
 
 #To force activate the secret level, change line 90 value from 15 to 0 and change line 94 value to 2 instead of the random integer
 
+#greets the users and asks them if they are ready
+redo = input("Are you ready? y/n: ")
 print("Welcome to the Candy Crushinator Game \n")
 print("Made by Zakariyah Khan")
 print("In this game, you will input a string upto 10 characters long. You will then guess what the output will be after all consecutive triplets are removed \n")
-redo = input("Are you ready? y/n: ")
 
+#this handles invalid inputs
 while redo != "y" and redo != "n":
     print("Invalid Input")
     redo = input("Are you ready? y/n: ")
+
+#defines all the variables needed for later
 list = ""
 count = 0
 count1 = 0
@@ -23,6 +27,7 @@ wrong = "You got it wrong..."
 entry1 = ""
 complete = False
 
+#this takes the users entry and guess and stores it in 2 places
 if redo == "y":
     entry = input("Enter a string up to 10 characters long: ")
     while len(entry) > 10:
@@ -36,7 +41,7 @@ if redo == "y":
     redo = "y"
     list = "You entered: " + entry + " Your guess was " + guess
 
-
+#this is the filtering system which remove all triplets from the user entry
 while redo == "y":
     while count < 10:
         if len(entry) >= 3 and entry[0] == entry[1] == entry[2]:
@@ -65,6 +70,7 @@ while redo == "y":
             count1 += 1
         count += 1
 
+    #this stores the correct answer with the users entry to display in final results
     print(entry)
     list += ". The answer is: " + entry + ". "
 
@@ -88,12 +94,13 @@ while redo == "y":
         list += "You entered: " + entry + ":"
 
 final = "Final results: " + list
-if len(final) != 15:
+if len(final) != 0:#15:
     print(final)
     print("Your final score is:", points)
 
-    num = random.randint(1, 3)
+    num = 2#random.randint(1, 3)
     if num == 2:
+        entry = ""
         print("SECRET LEVEL \n")
         print("**booting**")
         print("**initializing**\n")
