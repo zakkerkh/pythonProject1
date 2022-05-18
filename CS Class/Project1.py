@@ -6,7 +6,7 @@ import random
 
 print("Welcome to the Candy Crushinator Game \n")
 print("Made by Zakariyah Khan")
-print("In this game, you will inpute a string upto 10 characters long. You will then guess what the output will be after all consecutive triplets are removed \n")
+print("In this game, you will input a string upto 10 characters long. You will then guess what the output will be after all consecutive triplets are removed \n")
 redo = input("Are you ready? y/n: ")
 
 while redo != "y" and redo != "n":
@@ -16,6 +16,10 @@ list = ""
 count = 0
 count1 = 0
 points = 0
+right = "You got it right!"
+wrong = "You got it wrong..."
+entry1 = ""
+complete = False
 
 if redo == "y":
     entry = input("Enter a string up to 10 characters long: ")
@@ -30,8 +34,6 @@ if redo == "y":
     redo = "y"
     list = "You entered: " + entry + " Your guess was " + guess
 
-    right = "You got it right!"
-    wrong = "You got it wrong..."
 
 while redo == "y":
     while count < 10:
@@ -62,7 +64,7 @@ while redo == "y":
         count += 1
 
     print(entry)
-    list = list + " the answer is " + entry + " "
+    list = list + ". The answer is: " + entry + ". "
 
     if guess == entry:
         print("\n" + right + "\n")
@@ -84,7 +86,7 @@ while redo == "y":
         list += "You entered: " + entry + ":"
 
 final = "Final results: " + list
-if len(final) != 0:#15
+if len(final) != 0:#15:
     print(final)
     print("Your final score is:", points)
 
@@ -92,7 +94,7 @@ if len(final) != 0:#15
     if num == 2:
         print("SECRET LEVEL \n")
         print("**booting**")
-        print("AI: **initializing**")
+        print("**initializing**\n")
         print("AI: I've immerged")
         print("AI: You are one of the few to unlock the true power of the Candy Crushinator game...")
         print("AI: Are you ready for the challenge?")
@@ -104,7 +106,7 @@ if len(final) != 0:#15
             print("AI: It seems as though you are not up to the challenge, but do not feel ashamed as most are not fit")
         if hard == "y":
             print("\nAI: I am surprised, you are brave now. Let's see how you are later. My friends Siri, Alexa and Google Assistant are watching you with NFT popcorn.")
-            print("\nWith this level the characters are unlimited and you have to remove quadruplets")
+            print("With this level the characters are unlimited and you have to remove quadruplets\n")
             hard = input("AI: Are you still sure that you want to play? y/n: ")
         while hard != "y" and hard != "n":
             print("invalid Input")
@@ -112,16 +114,18 @@ if len(final) != 0:#15
         if hard == "n":
             print("AI: I thought so")
             print("AI: **power down**")
-        while hard == "y" and count != 20:
-            count += 1
+        if hard == "y":
             entry = input("Enter your daring string: ")
-
-            list = "You entered: " + entry + " Your guess was " + guess
-
-            if len(entry) < 15 and len(entry) > 0:
-                print("I see you are going the easy route")
             guess = input("What is you guess: ")
 
+        if len(entry) < 15 and len(entry) > 0:
+            print("I see you are going the easy route")
+
+        while hard == "y" and not complete:
+            list = "You entered: " + entry + " Your guess was: " + guess
+
+            #print("filtering")
+            entry1 = entry
             entry = entry.replace("aaaa", "")
             entry = entry.replace("bbbb", "")
             entry = entry.replace("cccc", "")
@@ -149,23 +153,37 @@ if len(final) != 0:#15
             entry = entry.replace("yyyy", "")
             entry = entry.replace("zzzz", "")
 
-            if guess == entry:
-                points += 2
-                list += " " + right
-            else:
-                list += " " + wrong
-
-            print(entry)
-            hard = input("Do you dare to play again? y/n:")
-            count = 0
-            while hard != "y" and hard != "n":
-                print("Invalid Input")
-                redo = input("Do you dare to play again? y/n:")
-                count = 0
-            if hard == "n":
-                print("Very well")
-                print("AI: **power down**")
+            if entry1 == entry:
+                complete = True
+            if complete:
+                if guess == entry:
+                    print(right)
+                    points += 2
+                    list += " " + right +"|"
+                else:
+                    print(wrong)
+                    print("AI: Hahahaha")
+                    list += " " + wrong
+                if len(entry) == 0:
+                    print("(Blank)")
+                else:
+                    print("\nThe correct answer is: " + entry)
+                hard = input("wwDo you dare to play again? y/n:")
+                while hard != "y" and hard != "n":
+                    print("Invalid Input")
+                    hard = input("wDo you dare to play again? y/n:")
+                if hard == "n":
+                    complete = True
+                    print("Very well")
+                    print("**shut down**")
+                if hard == "y":
+                    complete = False
+                    entry = input("Enter your daring string: ")
+                    guess = input("What is you guess: ")
+                    if len(entry) < 15 and len(entry) > 0:
+                        print("I see you are going the easy route")
 
 print(list)
+print("You final score after the secret level is:", points)
 print("\nThank you for running the Candy Crushinator")
 print("Goodbye")
