@@ -4,7 +4,7 @@
 #Hello, how are you doing
 import random
 
-#To force activate the secret level, change line 90 value from 15 to 0 and change line 94 value to 2 instead of the random integer
+#To force activate the secret level, change line 98 value from 15 to 0 and change line 103 value to 2 instead of the random integer
 
 #greets the users and asks them if they are ready
 redo = input("Are you ready? y/n: ")
@@ -95,12 +95,12 @@ while redo == "y":
 
 #this displays the final points and results
 final = "Final results: " + list
-if len(final) != 0:#15:
+if len(final) != 15:
     print(final)
     print("Your final score is:", points)
 
 #this has a random chance of activating the secret level and starts the AI character
-    num = 2#random.randint(1, 3)
+    num = random.randint(1, 3)
     if num == 2:
         entry = ""
         print("SECRET LEVEL \n")
