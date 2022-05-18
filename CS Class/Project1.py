@@ -119,7 +119,7 @@ if len(final) != 0:#15:
             guess = input("What is you guess: ")
 
         if len(entry) < 15 and len(entry) > 0:
-            print("I see you are going the easy route")
+            print("\nI see you are going the easy route")
 
         while hard == "y" and not complete:
             list = "You entered: " + entry + " --- Your guess was: " + guess + " ---"
@@ -168,14 +168,14 @@ if len(final) != 0:#15:
                     print("(Blank)")
                 else:
                     print("\nThe correct answer is: " + entry)
-                hard = input("wwDo you dare to play again? y/n:")
+                hard = input("Do you dare to play again? y/n:")
                 while hard != "y" and hard != "n":
                     print("Invalid Input")
-                    hard = input("wDo you dare to play again? y/n:")
+                    hard = input("Do you dare to play again? y/n:")
                 if hard == "n":
                     complete = True
                     print("Very well")
-                    print("**shut down**")
+                    print("**shut down**\n")
                 if hard == "y":
                     complete = False
                     entry = input("Enter your daring string: ")
