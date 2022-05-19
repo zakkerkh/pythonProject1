@@ -41,7 +41,7 @@ if redo == "y":
     redo = "y"
     list = "You entered: " + entry + " Your guess was " + guess
 
-#this is the filtering system which remove all triplets from the user entry
+#this is the filtering system which remove all triplets from the user entry and makes multiple passes until all triplets are removed
 while redo == "y":
     while count < 10:
         if len(entry) >= 3 and entry[0] == entry[1] == entry[2]:
@@ -118,7 +118,7 @@ if len(final) != 15:
             print("AI: It seems as though you are not up to the challenge, but do not feel ashamed as most are not fit")
         if hard == "y":
             print("\nAI: I am surprised, you are brave now. Let's see how you are later. My friends Siri, Alexa and Google Assistant are watching you with NFT popcorn.")
-            print("With this level the characters are unlimited and you have to remove quadruplets\n")
+            print("With this level the characters are unlimited and you have to remove quadruplets and quintuplets\n")
             hard = input("AI: Are you still sure that you want to play? y/n: ")
         while hard != "y" and hard != "n":
             print("invalid Input")
@@ -166,6 +166,32 @@ if len(final) != 15:
             entry = entry.replace("xxxx", "")
             entry = entry.replace("yyyy", "")
             entry = entry.replace("zzzz", "")
+            entry = entry.replace("aaaaa", "")
+            entry = entry.replace("bbbbb", "")
+            entry = entry.replace("ccccc", "")
+            entry = entry.replace("ddddd", "")
+            entry = entry.replace("eeeee", "")
+            entry = entry.replace("fffff", "")
+            entry = entry.replace("ggggg", "")
+            entry = entry.replace("hhhhh", "")
+            entry = entry.replace("iiiii", "")
+            entry = entry.replace("jjjjj", "")
+            entry = entry.replace("kkkkk", "")
+            entry = entry.replace("lllll", "")
+            entry = entry.replace("mmmmm", "")
+            entry = entry.replace("nnnnn", "")
+            entry = entry.replace("ooooo", "")
+            entry = entry.replace("ppppp", "")
+            entry = entry.replace("qqqqq", "")
+            entry = entry.replace("rrrrr", "")
+            entry = entry.replace("sssss", "")
+            entry = entry.replace("ttttt", "")
+            entry = entry.replace("uuuuu", "")
+            entry = entry.replace("vvvvv", "")
+            entry = entry.replace("wwwww", "")
+            entry = entry.replace("xxxxx", "")
+            entry = entry.replace("yyyyy", "")
+            entry = entry.replace("zzzzz", "")
 
             #this adds the users entry, guess and the answer to a single variable to display later
             if entry1 == entry:
