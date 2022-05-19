@@ -4,18 +4,24 @@
 #Hello, how are you doing
 import random
 
-#To force activate the secret level, change line 98 value from 15 to 0 and change line 103 value to 2 instead of the random integer
+#This is a python games based off of the candy crush concept.
+#In the first level the user enters a string upto 10 characters long, the user is supposed to guess the outputs after all triplets are gone.
+#The program filters all triplets and compares it to the users guess, if they guess correctly they score a point. The user can plauy for as long as they want.
+#When the user decides to stop playing, there is a
+#To force activate the secret level, change line 100 value from 15 to 0 and change line 105 value to 2 instead of the random integer
 
 #greets the users and asks them if they are ready
 redo = input("Are you ready? y/n: ")
-print("Welcome to the Candy Crushinator Game \n")
-print("Made by Zakariyah Khan")
-print("In this game, you will input a string upto 10 characters long. You will then guess what the output will be after all consecutive triplets are removed \n")
 
 #this handles invalid inputs
 while redo != "y" and redo != "n":
     print("Invalid Input")
     redo = input("Are you ready? y/n: ")
+
+if redo == "y":
+    print("Welcome to the Candy Crushinator Game \n")
+    print("Made by Zakariyah Khan")
+    print("In this game, you will input a string upto 10 characters long. You will then guess what the output will be after all consecutive triplets are removed \n")
 
 #defines all the variables needed for later
 list = ""
