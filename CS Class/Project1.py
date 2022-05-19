@@ -7,8 +7,13 @@ import random
 #This is a python games based off of the candy crush concept.
 #In the first level the user enters a string upto 10 characters long, the user is supposed to guess the outputs after all triplets are gone.
 #The program filters all triplets and compares it to the users guess, if they guess correctly they score a point. The user can plauy for as long as they want.
-#When the user decides to stop playing, there is a
-#To force activate the secret level, change line 100 value from 15 to 0 and change line 105 value to 2 instead of the random integer
+#When the user decides to stop playing, there is a 1 in 3 chance that the secret level will be unlocked.
+#If the secret level is unlocked, the user has an unlimited character limit and for the guess has to remove quadruplets and quintuplets.
+#The program filters the quadruplets and quintuplets and compares it the users guess, if the user was correct they gain 2 points.
+#The user can play as long as they want, when they decide to stop, the program presents to them there score and a final reports of everything they've entered and if they got it right
+#The program then greats the user
+
+#To force activate the secret level, change line 109 value from 15 to 0 and change line 114 value to 2 instead of the random integer
 
 #greets the users and asks them if they are ready
 redo = input("Are you ready? y/n: ")
