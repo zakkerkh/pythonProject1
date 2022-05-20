@@ -97,12 +97,12 @@ while redo == "y":
 
 #this displays the final points and results
 final = "Final results: " + list
-if len(final) != 15:
+if len(final) != 0: #15:
     print(final)
     print("Your final score is:", points)
 
 #this has a random chance of activating the secret level and starts the AI character
-    num = random.randint(1, 3)
+    num = 2 #random.randint(1, 3)
     if num == 2:
         entry = ""
         print("SECRET LEVEL \n")

@@ -5,6 +5,13 @@
 
 myList = [3, 4, 8, 11, 15]
 count = 0
+
+while count != len(myList):
+    count += 1
+    print("Item", count, "is:", myList[count-1])
+
+myList = [3, 4, 8, 11, 15]
+count = 0
 num = 0
 
 while count != len(myList):
