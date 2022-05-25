@@ -30,20 +30,120 @@
 # print(num)
 
 #2
-Fruits = ["apple", "pear", "peach"]
+# Fruits = ["apple", "pear", "peach"]
+#
+# fruitList = ("The list has the fruits:", Fruits[0].capitalize(), Fruits[1].capitalize(), "and", Fruits[2].capitalize())
+# veg = []
+# veg.append(input("Enter a vegatable: "))
+# veg.append(input("Enter a vegatable: "))
+# veg.append(input("Enter a vegatable: "))
+#
+# vegList = ("The list has the vegatables:", veg[0].capitalize(), veg[1].capitalize(), "and", veg[2].capitalize())
+#
+# food = []
+# food.append(Fruits)
+# food.append(veg)
+#
+# food2 = food
+# #print(food[0][1].replace("a", "-"))
+# food[0][0] = food[0][0].replace("a", "-")
+# food[0][1] = food[0][1].replace("a", "-")
+# food[0][2] = food[0][2].replace("a", "-")
+# food[1][0] = food[1][0].replace("a", "-")
+# food[1][1] = food[1][1].replace("a", "-")
+# food[1][2] = food[1][2].replace("a", "-")
+#
+# food[0][0] = food[0][0].replace("e", "-")
+# food[0][1] = food[0][1].replace("e", "-")
+# food[0][2] = food[0][2].replace("e", "-")
+# food[1][0] = food[1][0].replace("e", "-")
+# food[1][1] = food[1][1].replace("e", "-")
+# food[1][2] = food[1][2].replace("e", "-")
+#
+# food[0][0] = food[0][0].replace("i", "-")
+# food[0][1] = food[0][1].replace("i", "-")
+# food[0][2] = food[0][2].replace("i", "-")
+# food[1][0] = food[1][0].replace("i", "-")
+# food[1][1] = food[1][1].replace("i", "-")
+# food[1][2] = food[1][2].replace("i", "-")
+#
+# food[0][0] = food[0][0].replace("o", "-")
+# food[0][1] = food[0][1].replace("o", "-")
+# food[0][2] = food[0][2].replace("o", "-")
+# food[1][0] = food[1][0].replace("o", "-")
+# food[1][1] = food[1][1].replace("o", "-")
+# food[1][2] = food[1][2].replace("o", "-")
+#
+# food[0][0] = food[0][0].replace("u", "-")
+# food[0][1] = food[0][1].replace("u", "-")
+# food[0][2] = food[0][2].replace("u", "-")
+# food[1][0] = food[1][0].replace("u", "-")
+# food[1][1] = food[1][1].replace("u", "-")
+# food[1][2] = food[1][2].replace("u", "-")
+#
+# print(food)
+# food = food2
+# food.append(Fruits[0])
+# food.append(Fruits[1])
+# food.append(Fruits[2])
+# food.append(veg[0])
+# food.append(veg[1])
+# food.append(veg[2])
+#
+# count = 0
+#
+# length = (len(food))
+# while count != length:
+# #    food1 = food[count]
+#     if not (food[count].startswith("a") or food[count].startswith("e") or food[count].startswith("i") or food[count].startswith("o") or food[count].startswith("u")):
+#         print(food)
+#     count += 1
 
-fruitList = ("The list has the fruits:", Fruits[0].capitalize(), Fruits[1].capitalize(), "and", Fruits[2].capitalize())
-veg = []
-veg.append(input("Enter a vegatable: "))
-veg.append(input("Enter a vegatable: "))
-veg.append(input("Enter a vegatable: "))
+#3
+# num1 = int(input("Enter a number: "))
+# num2 = int(input("Enter a number: "))
+# num3 = int(input("Enter a number: "))
+# num4 = int(input("Enter a number: "))
+#
+# list = [num1, num2, num3, num4]
+# count = 0
+#
+# while count != 4:
+#     list[count] += 3
+#     count += 1
+#
+# print(list)
+#
+# add = int(input("Enter a positive number: "))
+#
+# count = 0
+#
+# while count != 4:
+#     list[count] += add
+#     count += 1
+#
+# print(list)
+#
+# add = int(input("Enter a negative number: "))
+#
+# count = 0
+#
+# while count != 4:
+#     list[count] += add
+#     count += 1
+#
+# print(list)
 
-vegList = ("The list has the vegatables:", veg[0].capitalize(), veg[1].capitalize(), "and", veg[2].capitalize())
+#4
+# list = [int(input("Enter a number: ")), int(input("Enter a number: "))]
+# if list[0] > list[1]:
+#     print("True")
+# else:
+#     print("False")
+#     list = [list[1], list[0]]
+# print(list)
 
-food = []
-food.append(Fruits)
-food.append(veg)
+list = [int(input("Enter a number: ")), int(input("Enter a number: ")), int(input("Enter a number: "))]
 
-print(food)
-
-print()
+list.sort(reverse=True)
+print(list)
