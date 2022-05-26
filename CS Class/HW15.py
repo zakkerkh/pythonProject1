@@ -1,37 +1,77 @@
-items = ['a','b','c','d']
-items.reverse()
-print(items)
-items = ['q','d','z','t']
-items.sort()
-print(items)
-items = [25,5,13,1]
-items.sort()
-print(items)
-# items['z','5','b',1]
-# items.sort()
-# print(items)
-items = ['a','b','c','d']
-items.clear()
-print(items)
-# items = ['a','b','c','d']
-# print(items.index('a'))
-# print(items.index('f'))
-items = ["me","you","us"]
-print("me" in items)
-print("myself" in items)
-items = [3,5,1,6,12]
-print(max(items))
-print(min(items))
-print(sum(items))
-# items = ['a','b','c','d']
-# print(max(items))
-# print(min(items))
-# print(sum(items))
-import random
-items = [1,2,6,3,5,8]
-random.choice(items)
+#Zakariyah. M. J. Khan
+#ICS2O_2122_S2
+#26/05/2022
+#Hello, how are you doing
+
+#1a
+# list = [input("Enter a name: "), input("Enter a name: "), input("Enter a name: "), input("Enter a name: "), input("Enter a name: "),]
+# list.sort()
+# print(list)
+
+#b
+# list = []
+# repeat = True
+# while repeat:
+#     entry = input("Enter a name: ")
+#     if entry == "done":
+#         repeat = False
+#     list.append(entry)
+# list.sort()
+# print(list)
+
+#c
+# list = []
+# list1 = []
+# list2 = ["a","b","c","d","e","f", "g", "h", "i", "j", "k", "l", "m"]
+# repeat = True
+# while repeat:
+#     entry = input("Enter a name: ")
+#     if entry == "done":
+#         repeat = False
+#     if entry != "done":
+#         if entry[0] in list2:
+#             list.append(entry)
+#         else:
+#             list1.append(entry)
+# list.sort()
+# list1.sort()
+# print(list)
+# print(list1)
+
+#2a
+# list = []
+# count = 3
+# while count != 0:
+#     list.append(int(input("Enter a number: ")))
+#     count -= 1
+#
+# entry = int(input("Enter another number: "))
+# if entry in list:
+#     position = list.index(entry)
+#     list.insert(position, 0)
+#     list.remove(position+1)
+#
+# print(list)
+
+#3a/b
 # import random
-# items = [1,2,6,3,5,8]
-# print(random.sample(items,2))
-# print(random.sample(items,5))
-# # print(random.sample(items,10))
+#
+# myList = ["Computer", "Malware", "Software", "Technology"]
+# guess = input("What is your guess?: ")
+#
+# if guess in myList:
+#     print("You got it correct")
+#
+# num = random.randint(0, 3)
+# secret = myList[num]
+# myList.remove(myList[num])
+# print(myList)
+#
+# correct = False
+# while not correct:
+#     guess = input("What is your guess?: ")
+#     if guess == secret:
+#         print("You guessed the secret word")
+#         correct = True
+#     else:
+#         print("You got it wrong")
