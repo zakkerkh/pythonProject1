@@ -75,3 +75,50 @@
 #         correct = True
 #     else:
 #         print("You got it wrong")
+
+#Even More List Practice
+import random
+
+#1
+# list = []
+# num = random.randint(1,2)
+# if num == 1:
+#     count = 5
+#     while count != 0:
+#         count -= 1
+#         list.append(random.randint(10, 20))
+# else:
+#     count = 10
+#     while count != 0:
+#         count -= 1
+#         list.append(random.randint(10, 20))
+# print(num)
+# print(list)
+#
+# if list[1] == 15 or list[-2] == 15:
+#     print("True")
+# else:
+#     print("False")
+
+#2
+num = int(input("Enter a number between 10 an 20"))
+num1 = int(input("Enter a number between 10 an 20"))
+list = []
+list1 = []
+
+if num > num1:
+    count = 0
+    while count != num:
+        list.append(1+count)
+        while count != num1:
+            list1.append((1+count)/num1)
+    count += 1
+elif num < num1:
+    count = 0
+    while count != num1:
+        list.append(1+count)
+        while count != num:
+            list1.append((1+count)/num)
+    count += 1
+print(list)
+print(list1)
