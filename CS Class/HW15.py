@@ -164,25 +164,27 @@ import random
 
 #coding practice
 #J1
-list = []
-w_count = 0
-l_count = 0
-count = 0
-group = 0
+# list = []
+# w_count = 0
+# l_count = 0
+# count = 0
+# group = 0
+#
+# while count != 6:
+#     entry = input("Enter W or L: ")
+#     if entry == "W":
+#         w_count += 1
+#     else:
+#         l_count += 1
+#     count += 1
+#
+# if w_count >= 5:
+#     print("1")
+# elif w_count >= 3:
+#     print("2")
+# elif w_count >= 1:
+#     print("3")
+# else:
+#     print("-1, Fatality")
 
-while count != 6:
-    entry = input("Enter W or L: ")
-    if entry == "W":
-        w_count += 1
-    else:
-        l_count += 1
-    count += 1
-
-if w_count >= 5:
-    print("1")
-elif w_count >= 3:
-    print("2")
-elif w_count >= 1:
-    print("3")
-else:
-    print("-1, Fatality")
+#J2
