@@ -3,12 +3,5 @@
 #20/05/2022
 #Hello, how are you doing
 
-myList = [3, 4, 8, 11, 15]
-count = 0
-num = 0
-
-while count != len(myList):
-    num += myList[count]
-    count += 1
-
-print(num)
+alphabet = "fdggdsg"
+print(alphabet[1])
