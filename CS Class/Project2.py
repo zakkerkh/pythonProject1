@@ -38,5 +38,5 @@ while count1 != len(text1):
 
 print(new_text)
 
-hint = input("Would you like a ")
+print("Your hint is")
 
