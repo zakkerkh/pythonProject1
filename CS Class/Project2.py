@@ -20,23 +20,40 @@ while count != 26:
     count += 1
 
 clues = ["the clue is in michaels office", "the clue is in the annex", "the clue is at reception",
-         "the clue is at your desk", "the clue is in the conference room"
+         "the clue is at your desk", "the clue is in the washroom", "the clue is in the lobby",
+         "the clue is in the security desk", "the clue is in the conference room", "the clue is in the parking lot"
+]
+clue_hint = ["michael", "annex", "reception",
+             "desk", "washroom", "lobby",
+             "security desk", "conference", "parking lot"
 ]
 
-clue_choice = random.randint(0, len(clues)-1)
-text1 = clues[clue_choice]
-new_text = ""
-count1 = 0
-while count1 != len(text1):
-    if text1[count1] != " ":
-        new_text += alphabet[new_alphabet[alphabet.index(text1[count1])]]
+success = False
+while not success:
+    clue_choice = random.randint(0, len(clues)-1)
+    clue_hint_choice = clue_choice
+    text1 = clues[clue_choice]
+    new_text = ""
+    count1 = 0
 
-    if text1[count1] == " ":
-        new_text += " "
+    while count1 != len(text1):
+        if text1[count1] != " ":
+            new_text += alphabet[new_alphabet[alphabet.index(text1[count1])]]
 
-    count1 += 1
+        if text1[count1] == " ":
+            new_text += " "
 
-print(new_text)
+        count1 += 1
 
-print("Your hint is")
+    print(new_text.capitalize())
+    print("Your hint is", clue_hint[clue_hint_choice])
 
+    print("Enter the location you would like to go\n")
+    print("Michael's Office-1      Your Desk-4       Security Desk-7")
+    print("Annex-2                 Washroom-5        Conference Room-8")
+    print("Reception-3             Lobby-6           Parking Lot-9")
+
+    location = input("Input: ")
+
+
+    success = True
