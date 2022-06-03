@@ -55,5 +55,6 @@ while not success:
 
     location = input("Input: ")
 
+    if location == clue_choice
 
     success = True
