@@ -38,10 +38,12 @@ points = 0
 success = False
 game_count = 4
 
-while not success and success != 0:
+while not success and game_count != 0:
     clue_choice = random.randint(0, len(clues)-1)
-    # clue_hint_choice = clue_choice
+    while clue_choice in completed_locations:
+        clue_choice = random.randint(0, len(clues) - 1)
     text1 = clues[clue_choice]
+    completed_locations.append(clue_choice)
     new_text = ""
     count1 = 0
 
@@ -62,10 +64,10 @@ while not success and success != 0:
     print("Annex-2                 Washroom-5        Conference Room-8")
     print("Reception-3             Lobby-6           Parking Lot-9")
 
-    # print(clue_choice, clue_choice, count1)
+    print(clue_choice, clue_choice, count1)
     location = int(input("Input: "))
     added_points = 4
-    while location != clue_choice:
+    while location != clue_choice+1:
         if added_points != 0:
             added_points -= 1
         print("You got it wrong, you lost 1 potential point\n Try again")
@@ -75,6 +77,22 @@ while not success and success != 0:
         print("You got it right")
         print("You will now be making your way to:", locations[clue_choice])
         if clue_choice == 0:
-
+            print("You are about to enter a place where work is not often done, but when work is done it is simply genius")
+        elif clue_choice == 1:
+            print("This is the place where boredom is reaches new heights, simply because of one being")
+        elif clue_choice == 2:
+            print("This is is where beauty lays, the name of the beauty is pamalamadingdong")
+        elif clue_choice == 3:
+            print("This is the place where the psycho devises his plan")
+        elif clue_choice == 4:
+            print("This is the place where to best of smells come out from")
+        elif clue_choice == 5:
+            print("This is the place where all the great people fo the biulding can meet each other")
+        elif clue_choice == 6:
+            print("This is the place where the most useful and protecting man sleeps")
+        elif clue_choice == 7:
+            print("This is the place where a great amount of insight comes from and some of the best ideas, second to Michael's office")
+        elif clue_choice == 8:
+            print("This is the place where all the the Lincolns and the Pontiacs meet")
         count -= 1
     success = True
