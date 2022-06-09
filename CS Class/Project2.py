@@ -75,6 +75,7 @@ elif play == "y":
                           "Good job, you succeeded, you are holding the envelope with the location of your keys."]
     jim_attacks = ["hit jim in the face with a snow ball", "tell Michael about Jim's horrible workplace behaviour", "scream Michael",
                    "scramble all of Jim's files", "end Jim's phone call", "expose Jim's lies to Charles Miner",]
+
     jim_attacks_execution = ["You go outside, make snow balls and put it in a bucket.\nYou walk upto Jim's desk while laughing and throwing snowballs at Jim's face.",
                              "You are walking to Michael's office\nMichael: *sighs* What is it that you want Dwight\nDwight: Jim hid my keys, but i found it, but fire him because of misbehaviour in the workplace\nMichael: Wait, you found you keys\nDwight: Yes\nMichael: GO HOME then",
                              "You are walking to Michael's office\nMichael: *sighs* What is it that you want Dwight\nDwight: Jim hid my keys, but i found it, but fire him because of misbehaviour in the workplace\nMichael: Wait, you found you keys\nDwight: Yes\nMichael: GO HOME then",
@@ -82,6 +83,7 @@ elif play == "y":
                              "You walk up to JIm's desk and unplug his phone with a smile on your face",
                              "You walk upto Charles Miner\nDwight: Did you know that Jim actually doesn't know how to play soccer and has been sucking up to you this whole time\nCharles: Oh really, Thats good to know\nCharles: I'll keep that in mind for his next performance review\nYou smille",
                              ]
+    nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
     completed_locations = []
     points = 0
     finish = False
@@ -120,12 +122,18 @@ elif play == "y":
             print("Reception-3             Lobby-6           Parking Lot-9")
 
             print(clue_choice, clue_choice, count1)
-            location = int(input("Input: "))
+            # location = int(input("Input: "))
+            location = input("Input: ")
+            while not isinstance(location, int):
+                location = (input("Input: "))
+                if location in nums:
+                    location = int(location)
+
             added_points = 4
             while location != clue_choice+1:
                 if added_points != 0:
                     added_points -= 1
-                print("You got it wrong, you lost 1 potential point\n Try again")
+                print("You got it wrong, you lost 1 potential point\nTry again")
                 location = int(input("Input: "))
 
             points += added_points
@@ -170,9 +178,9 @@ elif play == "y":
             game_count -= 1
 
         print("Your final score is:", points)
-        print("You can get an extra 10 points if you decypher the keyword from the last message")
-        bonus = input("Would you like to try? y/n: ")
-        if bonus == ""
+        # print("You can get an extra 10 points if you decypher the keyword from the last message")
+        # bonus = input("Would you like to try? y/n: ")
+        # if bonus == ""
 
         redo = input("\nWould you like to play again? y/n" )
         while redo != "y" and redo != "n":

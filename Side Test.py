@@ -3,5 +3,6 @@
 #20/05/2022
 #Hello, how are you doing
 
-alphabet = "fdggdsg"
-print(alphabet[1])
+num = "S"
+if isinstance(num, int):
+    print("fd")
