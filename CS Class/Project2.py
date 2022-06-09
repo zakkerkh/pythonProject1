@@ -38,7 +38,9 @@ elif play == "y":
         print("5     4       3         2\n")
 
     print("Jim: Don't worry Dwight, I'll tell you where your keys are")
-    print("Jim: I hid encrypted messages around the office.\nEach clue leading ot the next. You'll need to decypher these messages\nYou'll eventually find an envelope, in here you'll find the location of your house keys\n")
+    print("Jim: I hid encrypted messages around the office.\nJim: Each clue leading ot the next. You'll need to decypher these messages\nJim: You'll eventually find an envelope, in here you'll find the location of your house keys\n")
+
+    print("Game: You start off the game with 20 points, for each wrong guess, you lose 1 point")
     alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
                 "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
     new_alphabet = []
@@ -124,6 +126,7 @@ elif play == "y":
                 location = int(input("Input: "))
 
             points += added_points
+            print("Your current score is:", points)
 
             if location == clue_choice+1:
                 print("You got it right")
@@ -154,16 +157,16 @@ elif play == "y":
                     open_env_phrase_choice = random.randint(0, 5)
                     open_env = input("Would you like to open the envelope first-1 or " + jim_attacks[open_env_phrase_choice] + "-2: ")
 
-                    option = input("1 or 2")
-                    if option != "1" and option != "2":
-                        option = input("1 or 2")
-                    if option == "2":
+                    # option = input("1 or 2")
+                    if open_env != "1" and open_env != "2":
+                        open_env = input("1 or 2")
+                    if open_env == "2":
                         print(jim_attacks_execution[open_env_phrase_choice])
-                    print("You open the envelope and when you read the letter, you are in shock. The keys were simple put underneath his own welcome mat at his house\n*scream*")
+                    print("You open the envelope and when you read the letter, you are in shock. The keys were simple put underneath his own welcome mat at his house\nDwight: *scream*")
                 #count -= 1
             game_count -= 1
 
-        print(points)
+        print("Your final score is:", points)
 
         redo = input("Would you like to play again? y/n" )
         while redo != ("y" and "n"):
