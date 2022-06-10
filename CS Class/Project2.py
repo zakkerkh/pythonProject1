@@ -134,7 +134,12 @@ elif play == "y":
                 if added_points != 0:
                     added_points -= 1
                 print("You got it wrong, you lost 1 potential point\nTry again")
-                location = int(input("Input: "))
+                # location = int(input("Input: "))
+                location = input("Input: ")
+                while not isinstance(location, int):
+                    location = (input("Input: "))
+                    if location in nums:
+                        location = int(location)
 
             points += added_points
             print("\nYour current score is:", points)
@@ -178,9 +183,14 @@ elif play == "y":
             game_count -= 1
 
         print("Your final score is:", points)
-        # print("You can get an extra 10 points if you decypher the keyword from the last message")
-        # bonus = input("Would you like to try? y/n: ")
-        # if bonus == ""
+        print("You can get an extra 10 points if you decypher the keyword from the last message")
+        bonus = input("Would you like to try? y/n: ")
+        while bonus != "y" and bonus != "n":
+            redo = input("Would you like to try? y/n: ")
+        if redo == "y":
+            game_count = random.randint(4, 7)
+        elif redo == "n":
+            finish = True
 
         redo = input("\nWould you like to play again? y/n" )
         while redo != "y" and redo != "n":
