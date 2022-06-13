@@ -2,7 +2,4 @@
 #ICS2O_2122_S2
 #20/05/2022
 #Hello, how are you doing
-
-num = "S"
-if isinstance(num, int):
-    print("fd")
+print("     ____________\n    /     _.'\   \ \n   /   _.'    \   \ \n  /_.-'        \___\ \n |\_\ ``   .-   \ _/|\n |  _\___________.  | \n | /              \ | \n |/                \| \n |__________________| ")

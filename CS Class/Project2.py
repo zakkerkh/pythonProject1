@@ -15,30 +15,54 @@ if play == "n":
 elif play == "y":
     print("                       .+sso+/:oydyo/:-:+shdys/    `-:.     `-/+o+/`\n                 `/sdh+/::/::ss:`ymdhyso//hmMNyhNNms+ososys+/-:/shms/`\n                .+hNNy++oo+/.`.--/osyhdmNNMMMMMMMMMNdsssssoso+hhhhsoo+ymdo.\n              -smNy/+ymmmmmNNNNMNMMMMMNNNmmNMMMMMMMMMho:///:--shydNMMNdo-sNs`\n            -hNd+-sNMNdmNMMMNNNMNNNMMMddNMMNNmNMMMMMMNmy+///::/:-:/++ymNNdmMN\n          `sNMs`+NMNNNMMMMNNNMMMMMMNmhyso///+ohMmoNMmoo+/::/-:oymNNmsosshdhmMM/\n         +NMMy`hMMMhyNMNMMNNNMds:-.`-:syddmNMMmyo`+yMMho:..-+//++omMNNNNNNNmdNMs\n       :mMMMh`yMNdodNNNMNMMMs.+sdmmmmmdhNMMMNhy/..`-syhNmdyssso+/.`:yNMMMMNMNMMMy\n      :NMNh:-+MMh+mdNNNNNMd.+NNMMMMMMMMmho:-......:--::ohNMMMMMMNmNy/.oNMNmNMNMMMs\n     :NMm+/dmmMNydyhNdhMMN.yMMNmhysso+:-``        ```.--:/+sdMMMMMNNNm:-mMNNNNMMMMy\n    :NMy/hNMMMMmNddsh/NmMy-Mms:..`.--.`                ``..-.:yNMMMMNMNs:NMMMNNNNMMy\n   :NNy/mMMMMMMmNMMshsNdMo/d-...``                       ```...-yMMMNNMd`NMMNMdmoNMM-\n  /mMm+NMNNMMNMNNNNNNNNMMmom/                              ```..`+NMMMMh`NMMMMNNdhNMh\n +NMMmmMNyNMNMMMMMNmmmNMdNNyh+.                             ``````/NMMM::MMMMNMNNmNMN\n+MNNMMMNymMNNMMMNNNNNMh+:+dNmddhyoo+`                        ````.`sMMN`sMNNMNNMNNNNN\ndNNNMNNddMNNNNNNmymMN+---::/shdhyyy:                         `````..hMo.NMNMNMMMNmMMd\ndNNNMMNmNNNmmNMNdNMM+.-..----.-:::.                          ````...:mh/NMMMNMMMNNMMh\nsMNNMMNMNNmyNMNdmNMo--.....                                  ``...---:dNMNMMNMMNNNMMN.\n:NNNMMMNNNsmMNmMNMy...`.-.`                                    `.-----:odNmmNMMMMMNMMo\n.NMMMmMMMNmMNNNNMm:-.```..                                       ``-----:/o//dMMMNMMMm\n.NMMMNMMNMMNMNNNNs--.``...                                         `....---..dMNMMMMM`\n.NNMMNNNNNMMMNNNN:-...`...                                          ```.....`+MMMMMMM.\n.MNNNNNNNMMMMMNNy.......-.`                                         ``..---.`.NMMMMMM`\n`NMNMMNNNMMNMMMm-...`.-----.`                                        ``.-----.`yMMMMMd\n dMMMNNNNMMNNMMo`-....----..`          ``                      `.`` ```.------`:MMMMM-\n /MMNMNNNMMNMMN-`.`..-.--.` `--..-:-.-.``..``               ```.-......--.----..NMMMd\n `mMNMNNMMMNNMN.``...-.-../hddyysyhysyyso+--/::-..--...----:::+syyyyhhdddy+:-.-.hMMM:\n  :NNNNNNMMMMMN.`....--.:dy/:-.-/+++ososss+/:+shyo/::/:+os+:+syosyoso+/://ss//.`+MMm\n   +MdmNNMNMMMN+.--....:+-.-:+ooymdddmdhyo++ss+/yMo.`..oNsyhdhmdmmmmNmdo:-.--:+-:MM/\n  `y/..-+dNNMMMo-shhyo++--+sso-`dsymoso.smyso+//.od+/:/ho+yyhd/ymsNhyy./yy/``.-hhmm`\n  .s+md+- oMMMm``.-/sy//-.+/s.  odys+s-  /shyso+.sm+:::yd/hh+:`.hyyhy- `/y/.` `hs/s`\n  -oyMNyhs:NMMo     `.-`         .---` ``.`/::+s/ms````-mo+:`````.--` ````     `sNm`\n  `hsMh`.hymMM:       `-         `          .:+:hy`     od:-`                  .+sM-``\n   o+o/``-/mMM-        .-                ``.```hy`       s.`.`                 -/+M+``\n   .s `./NMMMM-         --            ````  `:ho`        .s`  ```             ./.+My`\n    /: `+MMdMM/          -.  `       `   ..+++-           :d/.             ``:o-`oMy\n     o. .sdNMMm`            `--:://+//.`-///:.           `.ohooo:-.`` `.-:+//:..`hMy\n     `s```.yMMMs                  ```     .y+  `::.:----.-``o:-::/:::--:::-----..mMo\n      :s` `oMNMN-                         :N+  -NNhy/:/sds./:..----------------`/MN\n        +o``-NMNMd`                      `-syyoo++/.++:so/+yN+..--....-..-....--`dM+\n        +:.`oMNNN`                     .:-` `.::.` `--..---/+/---.```........-.:d:\n         ./++Ny::`                   `--`          .--..-----::-..```......---.s.\n           `:os.--`                  .`            `.. ``.------.`.```..-----.:o\n             `h-..`                 ``        .:syy/-/ydho-.--...`````.------.+.\n              +o`.`                        ./ymNNNNNNNmmNNNh:....``.```.-----:s\n              `h-`.                    -/+oyo/:----:---.--:+sso:........--::-+:\n               /d...                 `.++:  -:--/+:/oo+o++-.``--.....-----:-:y\n               `Md:.`                ``     `-:/+ooooo+/-........-----------yo\n                mNNs-`                     `..-/oo+://:/oo:......----------os\n                h:+md:.                  ...``.`         `------.---------++\n               `h..-+ddo.`                            ``.----------------s:\n                h` .--/ydy:`                   `...--------------------+y.\n                h`   ..--+yds+.`               `....----------------:+dN`\n               `y      `.-.-:sdhs:.`    `...````..----------------:smsdm\n               `h         .--..-+ymdy+/:----:----------------.-/shs+.`os\n               `h           `..--..:sdmmhyo/::----------::/+syhy/....`+-\n               -y              `..--..--/oosyyyhhhyyyssoooo/:.`...`.` /-\n               `.                  `..--.......................````   +`\n                                      `...------..-.........``\n                                          ``..-.--........``\n                                               ```..```")
     print("\nYour character: Dwight Schrute")
-    print("\n \nWelcome to the game of the Office. Full of metaphor and inside jokes from the Office (U. S)\nYou are playing the character of Dwight and today in the Office Jim is smiling a little bit too much.\nYou are wondering what jim is upto.\nHere the adventure starts")
+    print("(When prompted with \"Next\" hit enter)")
+    input("Next: ")
+    print("\nWelcome to the game of the Office. Full of metaphor and inside jokes from the Office (U. S)")
+    input("Next: ")
+    print("You are playing the character of Dwight and today in the Office Jim is smiling a little bit too much.")
+    input("Next: ")
+    print("You are wondering what jim is upto.")
+    input("Next: ")
+    print("Here the adventure starts")
+    input("Next: ")
     print("Jim: Dwight, Where are your keys?")
-    option = input("Dismiss him-1\nCheck your assigned house key pocket-2\n: ")
+    input("Next: ")
+    option = input("[1]Dismiss him\n[2]Check your assigned house key pocket\n: ")
     if option == "1":
         print("\nDwight: Nice try Jim, stop wasting company time by talking to me!")
+        input("Next: ")
         print("Jim: Ok *smiles*")
+        input("Next: ")
         print("Out of curiosity you still check you pocket trying not to let Jim see\n")
-
+    input("Next: ")
     print("You are in shock, your house keys are gone")
     print("Dwight: *shouts* JIM WHAT DID YOU DO WITH MY KEYS \n")
 
-    option = input("Call Michael-1\nAsk jim calmly where your keys are-2\n: ")
+    option = input("[1]Call Michael\n[2]Ask jim calmly where your keys are\n: ")
     if option ==  "1":
+        input("Next: ")
         print("\nDwight: *shouts* MICHAEL")
+        input("Next: ")
         print("Michael: What is it Dwight")
+        input("Next: ")
         print("Dwight: Jim took my keys, fire him")
+        input("Next: ")
         print("Michael: Dwight, you know i cannot fire him , he's one of our best sales men\nGo deal with it your self\n")
 
     if option == "2":
         print("\nDwight: Jim, where are my keys. Don't worry jim, ill count to 5 before i get my katana")
-        print("5     4       3         2\n")
+        input("Next: ")
 
+        print("5     4       3         2\n")
+    input("Next: ")
     print("Jim: Don't worry Dwight, I'll tell you where your keys are")
-    print("Jim: I hid encrypted messages around the office.\nJim: Each clue leading to the next. You'll need to decypher these messages\nJim: You'll eventually find an envelope, in here you'll find the location of your house keys\n")
+    input("Next: ")
+    print("Jim: I hid encrypted messages around the office.")
+    input("Next: ")
+    print("Jim: Each clue leading to the next. You'll need to decypher these messages")
+    input("Next: ")
+    print("Jim: You'll eventually find an envelope, in here you'll find the location of your house keys\n")
+    input("Next: ")
 
     game_count = random.randint(4, 7)
     first_run = game_count
@@ -83,8 +107,13 @@ elif play == "y":
                              "You walk up to JIm's desk and unplug his phone with a smile on your face",
                              "You walk upto Charles Miner\nDwight: Did you know that Jim actually doesn't know how to play soccer and has been sucking up to you this whole time\nCharles: Oh really, Thats good to know\nCharles: I'll keep that in mind for his next performance review\nYou smille",
                              ]
+    bonus_words = ["prison mike", "beets", "dunder mifflin",
+                   "sabre", "pretzels", "senator"]
     nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    bonus_word = ""
     completed_locations = []
+    last_message = ""
+    redo = ""
     points = 0
     finish = False
 
@@ -98,6 +127,7 @@ elif play == "y":
             text1 = clues[clue_choice]
             completed_locations.append(clue_choice)
             new_text = ""
+            new_bonus_word = ""
             count1 = 0
 
             while count1 != len(text1):
@@ -106,28 +136,48 @@ elif play == "y":
 
                 if text1[count1] == " ":
                     new_text += " "
-
                 count1 += 1
+            count1 = 0
+
+            if game_count == 1:
+                bonus_word == bonus_words[random.randint(0, 5)]
+                while count1 != len(bonus_word):
+                    if bonus_word[count1] != " ":
+                        new_bonus_word += alphabet[new_alphabet[alphabet.index(bonus_word[count1])]]
+
+                    if bonus_word[count1] == " ":
+                        new_bonus_word += " "
+                    count1 += 1
+            print("kjgksjfghfsdhgdfshkghdfskhgdf" + new_bonus_word)
+
+
+
+
             if game_count == first_run:
-                print("\nThis is the first message you'll need to decypher:", new_text.upper())
+                print("\nThis is the first message you'll need to decypher:\n" + new_text.upper())
                 print("\nDo not worry though, you'll always gets hints!")
+                print("Your hint is", clue_hint[clue_choice])
             elif game_count != first_run:
-                print("\nYour message is:", new_text.upper())
-            print("Your hint is", clue_hint[clue_choice])
+                print("Your hint is", clue_hint[clue_choice])
+                print("\nYour message is:\n" + new_text.upper())
+
 
             message = "Enter the location you would like to go"
             print("\n" + message.upper() +"\n")
-            print("Michael's Office-1      Your Desk-4       Security Desk-7")
-            print("Annex-2                 Washroom-5        Conference Room-8")
-            print("Reception-3             Lobby-6           Parking Lot-9")
+            print("                            OPTIONS")
+            print("--------------------------------------------------------------------")
+            print("| [1]Michael's Office      [4]Your Desk       [7]Security Desk     |")
+            print("| [2]Annex                 [5]Washroom        [8]Conference Room   |")
+            print("| [3]Reception             [6]Lobby           [9]Parking Lot       |")
+            print("--------------------------------------------------------------------")
 
             print(clue_choice, clue_choice, count1)
             # location = int(input("Input: "))
             location = input("Input: ")
-            while not isinstance(location, int):
+            while location not in nums:
                 location = (input("Input: "))
-                if location in nums:
-                    location = int(location)
+            if location in nums:
+                location = int(location)
 
             added_points = 4
             while location != clue_choice+1:
@@ -136,16 +186,17 @@ elif play == "y":
                 print("You got it wrong, you lost 1 potential point\nTry again")
                 # location = int(input("Input: "))
                 location = input("Input: ")
-                while not isinstance(location, int):
+                while location not in nums:
                     location = (input("Input: "))
-                    if location in nums:
-                        location = int(location)
+                if location in nums:
+                    location = int(location)
 
             points += added_points
             print("\nYour current score is:", points)
 
             if location == clue_choice+1:
                 print("You got it right")
+                input("Next")
                 print("You will now be making your way to:", locations[clue_choice])
                 if game_count != 1:
                     if clue_choice == 0:
@@ -159,34 +210,43 @@ elif play == "y":
                     elif clue_choice == 4:
                         print("This is the place where to best of smells come out from")
                     elif clue_choice == 5:
-                        print("This is the place where all the great people fo the building can meet each other")
+                        print("This is the place where all the great people of the building can meet each other")
                     elif clue_choice == 6:
                         print("This is the place where the most useful and protecting man sleeps")
                     elif clue_choice == 7:
                         print("This is the place where a great amount of insight comes from and some of the best ideas, second to Michael's office")
                     elif clue_choice == 8:
                         print("This is the place where all the the Lincolns and the Pontiacs meet")
+                    input("Open the next clue: ")
 
                 if game_count == 1:
                     print(" ____  ____  _      _____ ____  ____  _____  _     _     ____  _____  _  ____  _      ____  _  _  _ \n/   _\/  _ \/ \  /|/  __//  __\/  _ \/__ __\/ \ /\/ \   /  _ \/__ __\/ \/  _ \/ \  /|/ ___\/ \/ \/ \n|  /  | / \|| |\ ||| |  _|  \/|| / \|  / \  | | ||| |   | / \|  / \  | || / \|| |\ |||    \| || || |\n|  \__| \_/|| | \||| |_//|    /| |-||  | |  | \_/|| |_/\| |-||  | |  | || \_/|| | \||\___ |\_/\_/\_/\n\____/\____/\_/  \|\____\\_/\_\\_/ \|  \_/  \____/\____/\_/ \|  \_/  \_/\____/\_/  \|\____/  (_)(_)(_)                                                                                                    ")
                     print("\n" + completion_phrases[random.randint(0, 3)])
                     open_env_phrase_choice = random.randint(0, 5)
-                    open_env = input("Would you like to open the envelope-1 or " + jim_attacks[open_env_phrase_choice] + "-2: ")
+                    open_env = input("[1]Would you like to open the envelope or [2]" + jim_attacks[open_env_phrase_choice] + ": ")
 
                     # option = input("1 or 2")
-                    if open_env != "1" and open_env != "2":
-                        open_env = input("1 or 2")
+                    while open_env != "1" and open_env != "2":
+                        open_env = input("1 or 2: ")
                     if open_env == "2":
                         print(jim_attacks_execution[open_env_phrase_choice])
-                    print("You open the envelope and when you read the letter, you are in shock. The keys were simply put underneath his own welcome mat at his house\nDwight: *scream*")
+                    print("____________________\n|\                /|\n| \              / | \n| /\____________/\ | \n|/                \| \n|__________________|")
+                    input("Next: ")
+                    print("     ____________\n    /     _.'\   \ \n   /   _.'    \   \ \n  /_.-'        \___\ \n |\_\ ``   .-   \ _/|\n |  _\___________.  | \n | /              \ | \n |/                \| \n |__________________| ")
+                    print("You open the envelope and when you read the letter, you are in shock. The keys were simply put underneath his own welcome mat at his house")
+                    input("Next: ")
+                    print("Dwight: *scream*")
                 #count -= 1
             game_count -= 1
-
+        input("Reveal final score: ")
         print("Your final score is:", points)
-        print("You can get an extra 10 points if you decypher the keyword from the last message")
+        print("You can get an extra 10 points if you can decypher a word, it will be encrypted the same way the previous messages were encrypted")
+        print("These words will be keywords from the storyline of the office")
         bonus = input("Would you like to try? y/n: ")
         while bonus != "y" and bonus != "n":
             redo = input("Would you like to try? y/n: ")
+
+
         if redo == "y":
             game_count = random.randint(4, 7)
         elif redo == "n":
