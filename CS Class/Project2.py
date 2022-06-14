@@ -109,7 +109,12 @@ elif play == "y":
                              ]
     bonus_words = ["prison mike", "beets", "dunder mifflin",
                    "sabre", "pretzels", "senator"]
-    nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    nums = []
+    cnt = 0
+    while cnt != 9:
+        cnt += 1
+        nums.append(str(cnt))
+    print(nums)
     bonus_word = ""
     completed_locations = []
     last_message = ""
@@ -118,16 +123,14 @@ elif play == "y":
     finish = False
 
     while not finish:
-        # print("hah")
         while game_count != 0:
-            # print("blah")
             clue_choice = random.randint(0, len(clues)-1)
             while clue_choice in completed_locations:
                 clue_choice = random.randint(0, len(clues) - 1)
             text1 = clues[clue_choice]
             completed_locations.append(clue_choice)
             new_text = ""
-            new_bonus_word = ""
+            # new_bonus_word = ""
             count1 = 0
 
             while count1 != len(text1):
@@ -139,30 +142,40 @@ elif play == "y":
                 count1 += 1
             count1 = 0
 
-            if game_count == 1:
-                bonus_word == bonus_words[random.randint(0, 5)]
-                while count1 != len(bonus_word):
-                    if bonus_word[count1] != " ":
-                        new_bonus_word += alphabet[new_alphabet[alphabet.index(bonus_word[count1])]]
-
-                    if bonus_word[count1] == " ":
-                        new_bonus_word += " "
-                    count1 += 1
-            print("kjgksjfghfsdhgdfshkghdfskhgdf" + new_bonus_word)
+            # if game_count == 1:
+            #     bonus_word == bonus_words[random.randint(0, 5)]
+            #     print("bonus word")
+            #     while count1 != len(bonus_word):
+            #         if bonus_word[count1] != " ":
+            #             new_bonus_word += alphabet[new_alphabet[alphabet.index(bonus_word[count1])]]
+            #
+            #         if bonus_word[count1] == " ":
+            #             new_bonus_word += " "
+            #         count1 += 1
+            # print("kjgksjfghfsdhgdfshkghdfskhgdf," + new_bonus_word)
 
 
 
 
             if game_count == first_run:
                 print("\nThis is the first message you'll need to decypher:\n" + new_text.upper())
-                print("\nDo not worry though, you'll always gets hints!")
-                print("Your hint is", clue_hint[clue_choice])
+                print("\nDo not worry though, you'll always gets the option for hints!\nDo note that you will lose 1 potential point if used.")
+                hint = input("Would you like a hint? y/n: ")
+                while hint != "y" and hint != "n":
+                    hint = input("Would you like a hint? y/n: ")
+                if hint == "y":
+                    print("Your hint is", clue_hint[clue_choice])
             elif game_count != first_run:
-                print("Your hint is", clue_hint[clue_choice])
                 print("\nYour message is:\n" + new_text.upper())
+                hint = input("Would you like a hint? y/n: ")
+                while hint != "y" and hint != "n":
+                    hint = input("Would you like a hint? y/n: ")
+                if hint == "y":
+                    print("Your hint is", clue_hint[clue_choice])
 
 
             message = "Enter the location you would like to go"
+            print(new_text.upper())
             print("\n" + message.upper() +"\n")
             print("                            OPTIONS")
             print("--------------------------------------------------------------------")
@@ -240,11 +253,12 @@ elif play == "y":
             game_count -= 1
         input("Reveal final score: ")
         print("Your final score is:", points)
-        print("You can get an extra 10 points if you can decypher a word, it will be encrypted the same way the previous messages were encrypted")
-        print("These words will be keywords from the storyline of the office")
-        bonus = input("Would you like to try? y/n: ")
-        while bonus != "y" and bonus != "n":
-            redo = input("Would you like to try? y/n: ")
+        # print("You can get an extra 10 points if you can decypher a word, it will be encrypted the same way the previous messages were encrypted")
+        # print("These words will be keywords from the storyline of the office")
+        # bonus = input("Would you like to try? y/n: ")
+        # while bonus != "y" and bonus != "n":
+        #     redo = input("Would you like to try? y/n: ")
+
 
 
         if redo == "y":
@@ -259,5 +273,27 @@ elif play == "y":
             game_count = random.randint(4, 7)
         elif redo == "n":
             finish = True
+print("Dwight: *smiles*")
+print("Dwight: *thinking to yourself* Now that I have all of these decyphered messages from Jim\nI have the secret to his encryption!!!")
+print("As a result of playing the game, you have access to the encryption system")
+encryption = input("Would you like to use the encrypter? y/n: ")
+while encryption != "y" and hint != "n":
+    encryption = input("Would you like to use the encrypter? y/n: ")
+if encryption == "y":
+    print("Enter \" stop\" to end the encryption machine")
+while encryption == "y":
+    text1 = input("Enter your word: ")
+    new_text = ""
+    count1 = 0
 
+    while count1 != len(text1):
+        if text1[count1] != " ":
+            new_text += alphabet[new_alphabet[alphabet.index(text1[count1])]]
+
+        if text1[count1] == " ":
+            new_text += " "
+        count1 += 1
+    count1 = 0
+
+    print(new_text)
 print("   _____                 _ _                \n  / ____|               | | |               \n | |  __  ___   ___   __| | |__  _   _  ___ \n | | |_ |/ _ \ / _ \ / _` | '_ \| | | |/ _  \n | |__| | (_) | (_) | (_| | |_) | |_| |  __/\n  \_____|\___/ \___/ \__,_|_.__/ \__, |\___|\n                                  __/ |     \n                                 |___/      ")
