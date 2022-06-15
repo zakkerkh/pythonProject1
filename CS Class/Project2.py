@@ -70,7 +70,7 @@ elif play == "y":
     print("How to play: You will be presented with an encrypted message, a list of locations and the option for a hint.")
     print("             You can try and decypher the messages and can use the hints every so often to assist.")
     print("             After decrypting previous messages it should get easier and easier")
-    print("             You start off the game with", game_count*4, "points, for each wrong guess, you lose 1 point")
+    print("             You start off the game with", game_count*4, "points, for each wrong guess and hint, you lose 1 point")
     input(": ")
     alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
                 "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
