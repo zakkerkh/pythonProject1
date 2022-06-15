@@ -2,6 +2,7 @@
 #ICS2O_2122_S2
 #31/05/2022
 #Hello, how are you doing
+#Project 2 Encryption
 
 import random
 
@@ -39,7 +40,7 @@ elif play == "y":
     print("Dwight: *shouts* JIM WHAT DID YOU DO WITH MY KEYS \n")
 
     option = input("[1]Call Michael\n[2]Ask jim calmly where your keys are\n: ")
-    if option ==  "1":
+    if option == "1":
         input(": ")
         print("\nDwight: *shouts* MICHAEL")
         input(": ")
@@ -66,7 +67,11 @@ elif play == "y":
 
     game_count = random.randint(4, 7)
     first_run = game_count
-    print("Game: You start off the game with", game_count*4, "points, for each wrong guess, you lose 1 point")
+    print("How to play: You will be presented with an encrypted message, a list of locations and the option for a hint.")
+    print("             You can try and decypher the messages and can use the hints every so often to assist.")
+    print("             After decrypting previous messages it should get easier and easier")
+    print("             You start off the game with", game_count*4, "points, for each wrong guess, you lose 1 point")
+    input(": ")
     alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
                 "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
     new_alphabet = []
@@ -107,14 +112,11 @@ elif play == "y":
                              "You walk up to Jim's desk and unplug his phone with a smile on your face",
                              "You walk upto Charles Miner\nDwight: Did you know that Jim actually doesn't know how to play soccer and has been sucking up to you this whole time\nCharles: Oh really, Thats good to know\nCharles: I'll keep that in mind for his next performance review\nYou smille",
                              ]
-    bonus_words = ["prison mike", "beets", "dunder mifflin",
-                   "sabre", "pretzels", "senator"]
     nums = []
     cnt = 0
     while cnt != 9:
         cnt += 1
         nums.append(str(cnt))
-    print(nums)
     bonus_word = ""
     completed_locations = []
     last_message = ""
@@ -130,7 +132,6 @@ elif play == "y":
             text1 = clues[clue_choice]
             completed_locations.append(clue_choice)
             new_text = ""
-            # new_bonus_word = ""
             count1 = 0
 
             while count1 != len(text1):
@@ -142,23 +143,9 @@ elif play == "y":
                 count1 += 1
             count1 = 0
 
-            # if game_count == 1:
-            #     bonus_word == bonus_words[random.randint(0, 5)]
-            #     print("bonus word")
-            #     while count1 != len(bonus_word):
-            #         if bonus_word[count1] != " ":
-            #             new_bonus_word += alphabet[new_alphabet[alphabet.index(bonus_word[count1])]]
-            #
-            #         if bonus_word[count1] == " ":
-            #             new_bonus_word += " "
-            #         count1 += 1
-            # print("kjgksjfghfsdhgdfshkghdfskhgdf," + new_bonus_word)
-
-
-
-
             if game_count == first_run:
                 print("\nThis is the first message you'll need to decypher:\n" + new_text.upper())
+                input(": ")
                 print("\nDo not worry though, you'll always gets the option for hints!\nDo note that you will lose 1 potential point if used.")
                 hint = input("Would you like a hint? y/n: ")
                 while hint != "y" and hint != "n":
@@ -210,6 +197,7 @@ elif play == "y":
             if location == clue_choice+1:
                 print("You got it right")
                 input(": ")
+
                 print("You will now be making your way to:", locations[clue_choice])
                 if game_count != 1:
                     if clue_choice == 0:
@@ -238,7 +226,6 @@ elif play == "y":
                     open_env_phrase_choice = random.randint(0, 5)
                     open_env = input("[1]Would you like to open the envelope or [2]" + jim_attacks[open_env_phrase_choice] + ": ")
 
-                    # option = input("1 or 2")
                     while open_env != "1" and open_env != "2":
                         open_env = input("1 or 2: ")
                     if open_env == "2":
@@ -249,17 +236,9 @@ elif play == "y":
                     print("You open the envelope and when you read the letter, you are in shock. The keys were simply put underneath his own welcome mat at his house")
                     input(": ")
                     print("Dwight: *scream*")
-                #count -= 1
             game_count -= 1
         input("Reveal final score: ")
         print("Your final score is:", points)
-        # print("You can get an extra 10 points if you can decypher a word, it will be encrypted the same way the previous messages were encrypted")
-        # print("These words will be keywords from the storyline of the office")
-        # bonus = input("Would you like to try? y/n: ")
-        # while bonus != "y" and bonus != "n":
-        #     redo = input("Would you like to try? y/n: ")
-
-
 
         if redo == "y":
             game_count = random.randint(4, 7)
@@ -276,8 +255,7 @@ elif play == "y":
             finish = True
 
     print("Dwight: *smiles*")
-    print(
-        "Dwight: *thinking to yourself* Now that I have all of these decyphered messages from Jim\nI have the secret to his encryption!!!")
+    print("Dwight: *thinking to yourself* Now that I have all of these decyphered messages from Jim\nI have the secret to his encryption!!!")
     print("As a result of playing the game, you have access to the encryption system")
     encryption = input("Would you like to use the encrypter? y/n: ")
     while encryption != "y" and hint != "n":
