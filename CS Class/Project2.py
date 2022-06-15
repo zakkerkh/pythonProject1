@@ -103,8 +103,8 @@ elif play == "y":
     jim_attacks_execution = ["You go outside, make snow balls and put it in a bucket.\nYou walk upto Jim's desk while laughing and throwing snowballs at Jim's face.",
                              "You are walking to Michael's office\nMichael: *sighs* What is it that you want Dwight\nDwight: Jim hid my keys, but i found it, but fire him because of misbehaviour in the workplace\nMichael: Wait, you found you keys\nDwight: Yes\nMichael: GO HOME then",
                              "You are walking to Michael's office\nMichael: *sighs* What is it that you want Dwight\nDwight: Jim hid my keys, but i found it, but fire him because of misbehaviour in the workplace\nMichael: Wait, you found you keys\nDwight: Yes\nMichael: GO HOME then",
-                             "You walk to Jim's files while he is not look and with a sinister laugh, mix up all his files",
-                             "You walk up to JIm's desk and unplug his phone with a smile on your face",
+                             "You walk to Jim's files while he is not looking and with a sinister laugh, then you proceed to mix up all his files",
+                             "You walk up to Jim's desk and unplug his phone with a smile on your face",
                              "You walk upto Charles Miner\nDwight: Did you know that Jim actually doesn't know how to play soccer and has been sucking up to you this whole time\nCharles: Oh really, Thats good to know\nCharles: I'll keep that in mind for his next performance review\nYou smille",
                              ]
     bonus_words = ["prison mike", "beets", "dunder mifflin",
