@@ -280,6 +280,7 @@ elif play in yes_list:
     #,it encrypts any word entered and terminates when "stop" is entered
     print("Dwight: *smiles*")
     print("Dwight: *thinking to yourself* Now that I have all of these deciphered messages from Jim\nI have the secret to his encryption!!!")
+    input(": ")
     print("As a result of playing the game, you have access to the SUPERENCRYPTER. This Machine can encrypt any message.")
     encryption = input("Would you like to use the encrypter? y/n: ")
     while encryption != "y" and hint != "n":
