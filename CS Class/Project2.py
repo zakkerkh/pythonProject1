@@ -5,11 +5,11 @@
 #Project 2 Encryption
 
 import random
-
 #Prints welcome statement
 print("___________.__             ________   _____  _____.__                   ___  ____ ___      _________ ___    \n\__    ___/|  |__   ____   \_____  \_/ ____\/ ____\__| ____  ____      /  / |    |   \    /   _____/ \  \   \n  |    |   |  |  \_/ __ \   /   |   \   __\\   __\|  |/ ___\/ __ \    /  /  |    |   /    \_____  \   \  \  \n  |    |   |   Y  \  ___/  /    |    \  |   |  |  |  \  \__\  ___/   (  (   |    |  /     /        \   )  ) \n  |____|   |___|  /\___  > \_______  /__|   |__|  |__|\___  >___  >   \  \  |______/ /\  /_______  /  /  /  \n                \/     \/          \/                     \/    \/     \__\          \/          \/  /__/   ")
 print("  ________    _____      _____  ___________\n /  _____/   /  _  \    /     \ \_   _____/\n/   \  ___  /  /_\  \  /  \ /  \ |    __)_ \n\    \_\  \/    |    \/    Y    \|        \n \______  /\____|__  /\____|__  /_______  /\n        \/         \/         \/        \/ ")
-#confirming whether user want to palay
+
+#Confirming whether user want to play
 play = input("Would you like to play? y/n: ")
 while play != "y" and play != "n":
     play = input("Would you like to play? y/n: ")
@@ -66,7 +66,8 @@ elif play == "y":
     input(": ")
     print("Jim: You'll eventually find an envelope, in here you'll find the location of your house keys\n")
     input(": ")
-    #determines how many rounds there will be and display the game instructions
+
+    #Determines how many rounds there will be and display the game instructions
     game_count = random.randint(4, 7)
     first_run = game_count
     print("How to play: You will be presented with an encrypted message, a list of locations and the option for a hint.")
@@ -74,7 +75,7 @@ elif play == "y":
     print("             After decrypting previous messages it should get easier and easier")
     print("             You start off the game with", game_count*4, "points, for each wrong guess and hint, you lose 1 point")
     input(": ")
-    #generates all neccessary lists and varibales needed for later in the game such as the
+    #Generates all neccessary lists and varibales needed for later in the game such as the
     #alphabet, list of locations and phrases
     alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
                 "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
@@ -152,6 +153,7 @@ elif play == "y":
             count1 = 0
 
             added_points = 4
+
             #This reitierates some instructions if it is the first round
             if game_count == first_run:
                 print("\nThis is the first message you'll need to decipher:\n" + new_text.upper())
@@ -185,7 +187,7 @@ elif play == "y":
             print("| [3]Reception             [6]Lobby           [9]Parking Lot       |")
             print("--------------------------------------------------------------------")
 
-            print(clue_choice, clue_choice, count1)
+            # print(clue_choice, clue_choice, count1) used for debugging
             #Takes user input for location and handles invalid inputs
             location = input("Input: ")
             while location not in nums:
@@ -203,6 +205,7 @@ elif play == "y":
                     location = (input("Input: "))
                 if location in nums:
                     location = int(location)
+
             #Displays the current score
             points += added_points
             print("\nYour current score is:", points)
@@ -235,7 +238,7 @@ elif play == "y":
                         print("This is the place where all the the Lincolns and the Pontiacs meet")
                     input("Open the next clue: ")
                 #If the user has completed the game it prompts them to to move on and
-                # includes aspect of storyline which is different each time
+                #includes aspect of storyline which is different each time
                 if game_count == 1:
                     print(" ____  ____  _      _____ ____  ____  _____  _     _     ____  _____  _  ____  _      ____  _  _  _ \n/   _\/  _ \/ \  /|/  __//  __\/  _ \/__ __\/ \ /\/ \   /  _ \/__ __\/ \/  _ \/ \  /|/ ___\/ \/ \/ \n|  /  | / \|| |\ ||| |  _|  \/|| / \|  / \  | | ||| |   | / \|  / \  | || / \|| |\ |||    \| || || |\n|  \__| \_/|| | \||| |_//|    /| |-||  | |  | \_/|| |_/\| |-||  | |  | || \_/|| | \||\___ |\_/\_/\_/\n\____/\____/\_/  \|\____\\_/\_\\_/ \|  \_/  \____/\____/\_/ \|  \_/  \_/\____/\_/  \|\____/  (_)(_)(_)                                                                                                    ")
                     print("\n" + completion_phrases[random.randint(0, 3)])
@@ -268,12 +271,12 @@ elif play == "y":
             completed_locations = []
         elif redo == "n":
             finish = True
-    #When user doesn not want to play the storyline finishes
-    #At this point the user user choose if they'd like to use the SUPERENCYPTER
-    #, it encrypts any word entered and terminates when "stop" is entered
+    #When user doesn't not want to play the storyline finishes
+    #At this point the user can choose if they'd like to use the SUPERENCYPTER
+    #,it encrypts any word entered and terminates when "stop" is entered
     print("Dwight: *smiles*")
     print("Dwight: *thinking to yourself* Now that I have all of these deciphered messages from Jim\nI have the secret to his encryption!!!")
-    print("As a result of playing the game, you have access to the encryption system")
+    print("As a result of playing the game, you have access to the SUPERENCRYPTER. This Machine can encrypt any message.")
     encryption = input("Would you like to use the encrypter? y/n: ")
     while encryption != "y" and hint != "n":
         encryption = input("Would you like to use the encrypter? y/n: ")
