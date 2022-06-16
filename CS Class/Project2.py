@@ -8,20 +8,21 @@ import random
 #Prints welcome statement
 print("___________.__             ________   _____  _____.__                   ___  ____ ___      _________ ___    \n\__    ___/|  |__   ____   \_____  \_/ ____\/ ____\__| ____  ____      /  / |    |   \    /   _____/ \  \   \n  |    |   |  |  \_/ __ \   /   |   \   __\\   __\|  |/ ___\/ __ \    /  /  |    |   /    \_____  \   \  \  \n  |    |   |   Y  \  ___/  /    |    \  |   |  |  |  \  \__\  ___/   (  (   |    |  /     /        \   )  ) \n  |____|   |___|  /\___  > \_______  /__|   |__|  |__|\___  >___  >   \  \  |______/ /\  /_______  /  /  /  \n                \/     \/          \/                     \/    \/     \__\          \/          \/  /__/   ")
 print("  ________    _____      _____  ___________\n /  _____/   /  _  \    /     \ \_   _____/\n/   \  ___  /  /_\  \  /  \ /  \ |    __)_ \n\    \_\  \/    |    \/    Y    \|        \n \______  /\____|__  /\____|__  /_______  /\n        \/         \/         \/        \/ ")
-
+yes_list = ["y", "Y", "yes", "Yes"]
+no_list = ["n", "N", "no", "No"]
 #Confirming whether user want to play
 play = input("Would you like to play? y/n: ")
-while play != "y" and play != "n":
+while play not in yes_list and play not in no_list:
     play = input("Would you like to play? y/n: ")
-if play == "n":
+if play in no_list:
     print("Thank you for opening the Office (U. S) game\nHave a good day")
-elif play == "y":
+elif play in yes_list:
     #Displays the player's character and runs through the dialogue between the characters
     print("                       .+sso+/:oydyo/:-:+shdys/    `-:.     `-/+o+/`\n                 `/sdh+/::/::ss:`ymdhyso//hmMNyhNNms+ososys+/-:/shms/`\n                .+hNNy++oo+/.`.--/osyhdmNNMMMMMMMMMNdsssssoso+hhhhsoo+ymdo.\n              -smNy/+ymmmmmNNNNMNMMMMMNNNmmNMMMMMMMMMho:///:--shydNMMNdo-sNs`\n            -hNd+-sNMNdmNMMMNNNMNNNMMMddNMMNNmNMMMMMMNmy+///::/:-:/++ymNNdmMN\n          `sNMs`+NMNNNMMMMNNNMMMMMMNmhyso///+ohMmoNMmoo+/::/-:oymNNmsosshdhmMM/\n         +NMMy`hMMMhyNMNMMNNNMds:-.`-:syddmNMMmyo`+yMMho:..-+//++omMNNNNNNNmdNMs\n       :mMMMh`yMNdodNNNMNMMMs.+sdmmmmmdhNMMMNhy/..`-syhNmdyssso+/.`:yNMMMMNMNMMMy\n      :NMNh:-+MMh+mdNNNNNMd.+NNMMMMMMMMmho:-......:--::ohNMMMMMMNmNy/.oNMNmNMNMMMs\n     :NMm+/dmmMNydyhNdhMMN.yMMNmhysso+:-``        ```.--:/+sdMMMMMNNNm:-mMNNNNMMMMy\n    :NMy/hNMMMMmNddsh/NmMy-Mms:..`.--.`                ``..-.:yNMMMMNMNs:NMMMNNNNMMy\n   :NNy/mMMMMMMmNMMshsNdMo/d-...``                       ```...-yMMMNNMd`NMMNMdmoNMM-\n  /mMm+NMNNMMNMNNNNNNNNMMmom/                              ```..`+NMMMMh`NMMMMNNdhNMh\n +NMMmmMNyNMNMMMMMNmmmNMdNNyh+.                             ``````/NMMM::MMMMNMNNmNMN\n+MNNMMMNymMNNMMMNNNNNMh+:+dNmddhyoo+`                        ````.`sMMN`sMNNMNNMNNNNN\ndNNNMNNddMNNNNNNmymMN+---::/shdhyyy:                         `````..hMo.NMNMNMMMNmMMd\ndNNNMMNmNNNmmNMNdNMM+.-..----.-:::.                          ````...:mh/NMMMNMMMNNMMh\nsMNNMMNMNNmyNMNdmNMo--.....                                  ``...---:dNMNMMNMMNNNMMN.\n:NNNMMMNNNsmMNmMNMy...`.-.`                                    `.-----:odNmmNMMMMMNMMo\n.NMMMmMMMNmMNNNNMm:-.```..                                       ``-----:/o//dMMMNMMMm\n.NMMMNMMNMMNMNNNNs--.``...                                         `....---..dMNMMMMM`\n.NNMMNNNNNMMMNNNN:-...`...                                          ```.....`+MMMMMMM.\n.MNNNNNNNMMMMMNNy.......-.`                                         ``..---.`.NMMMMMM`\n`NMNMMNNNMMNMMMm-...`.-----.`                                        ``.-----.`yMMMMMd\n dMMMNNNNMMNNMMo`-....----..`          ``                      `.`` ```.------`:MMMMM-\n /MMNMNNNMMNMMN-`.`..-.--.` `--..-:-.-.``..``               ```.-......--.----..NMMMd\n `mMNMNNMMMNNMN.``...-.-../hddyysyhysyyso+--/::-..--...----:::+syyyyhhdddy+:-.-.hMMM:\n  :NNNNNNMMMMMN.`....--.:dy/:-.-/+++ososss+/:+shyo/::/:+os+:+syosyoso+/://ss//.`+MMm\n   +MdmNNMNMMMN+.--....:+-.-:+ooymdddmdhyo++ss+/yMo.`..oNsyhdhmdmmmmNmdo:-.--:+-:MM/\n  `y/..-+dNNMMMo-shhyo++--+sso-`dsymoso.smyso+//.od+/:/ho+yyhd/ymsNhyy./yy/``.-hhmm`\n  .s+md+- oMMMm``.-/sy//-.+/s.  odys+s-  /shyso+.sm+:::yd/hh+:`.hyyhy- `/y/.` `hs/s`\n  -oyMNyhs:NMMo     `.-`         .---` ``.`/::+s/ms````-mo+:`````.--` ````     `sNm`\n  `hsMh`.hymMM:       `-         `          .:+:hy`     od:-`                  .+sM-``\n   o+o/``-/mMM-        .-                ``.```hy`       s.`.`                 -/+M+``\n   .s `./NMMMM-         --            ````  `:ho`        .s`  ```             ./.+My`\n    /: `+MMdMM/          -.  `       `   ..+++-           :d/.             ``:o-`oMy\n     o. .sdNMMm`            `--:://+//.`-///:.           `.ohooo:-.`` `.-:+//:..`hMy\n     `s```.yMMMs                  ```     .y+  `::.:----.-``o:-::/:::--:::-----..mMo\n      :s` `oMNMN-                         :N+  -NNhy/:/sds./:..----------------`/MN\n        +o``-NMNMd`                      `-syyoo++/.++:so/+yN+..--....-..-....--`dM+\n        +:.`oMNNN`                     .:-` `.::.` `--..---/+/---.```........-.:d:\n         ./++Ny::`                   `--`          .--..-----::-..```......---.s.\n           `:os.--`                  .`            `.. ``.------.`.```..-----.:o\n             `h-..`                 ``        .:syy/-/ydho-.--...`````.------.+.\n              +o`.`                        ./ymNNNNNNNmmNNNh:....``.```.-----:s\n              `h-`.                    -/+oyo/:----:---.--:+sso:........--::-+:\n               /d...                 `.++:  -:--/+:/oo+o++-.``--.....-----:-:y\n               `Md:.`                ``     `-:/+ooooo+/-........-----------yo\n                mNNs-`                     `..-/oo+://:/oo:......----------os\n                h:+md:.                  ...``.`         `------.---------++\n               `h..-+ddo.`                            ``.----------------s:\n                h` .--/ydy:`                   `...--------------------+y.\n                h`   ..--+yds+.`               `....----------------:+dN`\n               `y      `.-.-:sdhs:.`    `...````..----------------:smsdm\n               `h         .--..-+ymdy+/:----:----------------.-/shs+.`os\n               `h           `..--..:sdmmhyo/::----------::/+syhy/....`+-\n               -y              `..--..--/oosyyyhhhyyyssoooo/:.`...`.` /-\n               `.                  `..--.......................````   +`\n                                      `...------..-.........``\n                                          ``..-.--........``\n                                               ```..```")
     print("\nYour character: Dwight Schrute")
     print("(When prompted with \":\" hit enter)")
     input(": ")
-    print("\nWelcome to the game of the Office. Full of metaphor and inside jokes from the Office (U. S)")
+    print("Welcome to the game of the Office. Full of metaphor and inside jokes from the Office (U. S)")
     input(": ")
     print("You are playing the character of Dwight and today in the Office Jim is smiling a little bit too much.")
     input(": ")
@@ -30,30 +31,29 @@ elif play == "y":
     print("Here the adventure starts")
     input(": ")
     print("Jim: Dwight, Where are your keys?")
-    input(": ")
     option = input("[1]Dismiss him\n[2]Check your assigned house key pocket\n: ")
     if option == "1":
-        print("\nDwight: Nice try Jim, stop wasting company time by talking to me!")
+        print("Dwight: Nice try Jim, stop wasting company time by talking to me!")
         input(": ")
         print("Jim: Ok *smiles*")
         input(": ")
-        print("Out of curiosity you still check you pocket trying not to let Jim see\n")
-    input(": ")
+        print("Out of curiosity you still check you pocket trying not to let Jim see")
+        input(": ")
     print("You are in shock, your house keys are gone")
-    print("Dwight: *shouts* JIM WHAT DID YOU DO WITH MY KEYS \n")
+    print("Dwight: *shouts* JIM WHAT DID YOU DO WITH MY KEYS")
 
     option = input("[1]Call Michael\n[2]Ask jim calmly where your keys are\n: ")
     if option == "1":
-        print("\nDwight: *shouts* MICHAEL")
+        print("Dwight: *shouts* MICHAEL")
         input(": ")
         print("Michael: What is it Dwight")
         input(": ")
         print("Dwight: Jim took my keys, fire him")
         input(": ")
-        print("Michael: Dwight, you know i cannot fire him , he's one of our best sales men\nGo deal with it your self\n")
+        print("Michael: Dwight, you know i cannot fire him , he's one of our best salesmen\nGo deal with it yourself")
 
     if option == "2":
-        print("\nDwight: Jim, where are my keys. Don't worry jim, ill count to 5 before i get my katana")
+        print("Dwight: Jim, where are my keys. Don't worry jim, ill count to 5 before i get my katana")
         input(": ")
 
         print("5     4       3         2\n")
@@ -64,7 +64,7 @@ elif play == "y":
     input(": ")
     print("Jim: Each clue leading to the next. You'll need to decipher these messages")
     input(": ")
-    print("Jim: You'll eventually find an envelope, in here you'll find the location of your house keys\n")
+    print("Jim: You'll eventually find an envelope, in here you'll find the location of your house keys")
     input(": ")
 
     #Determines how many rounds there will be and display the game instructions
@@ -158,7 +158,7 @@ elif play == "y":
             if game_count == first_run:
                 print("\nThis is the first message you'll need to decipher:\n" + new_text.upper())
                 input(": ")
-                print("\nDo not worry though, you'll always gets the option for hints!\nDo note that you will lose 1 potential point if used.")
+                print("Do not worry though, you'll always gets the option for hints!\nDo note that you will lose 1 potential point if used.")
                 hint = input("Would you like a hint? y/n: ")
                 while hint != "y" and hint != "n":
                     hint = input("Would you like a hint? y/n: ")
@@ -187,7 +187,6 @@ elif play == "y":
             print("| [3]Reception             [6]Lobby           [9]Parking Lot       |")
             print("--------------------------------------------------------------------")
 
-            print(clue_choice, clue_choice, count1)
             #Takes user input for location and handles invalid inputs
             location = input("Input: ")
             while location not in nums:
@@ -258,7 +257,7 @@ elif play == "y":
                     print("____________________\n|\                /|\n| \              / | \n| /\____________/\ | \n|/                \| \n|__________________|")
                     input(": ")
                     print("     ____________\n    /     _.'\   \ \n   /   _.'    \   \ \n  /_.-'        \___\ \n |\_\ ``   .-   \ _/|\n |  _\___________.  | \n | /              \ | \n |/                \| \n |__________________| ")
-                    print("You open the envelope and when you read the letter, you are in shock. The keys were simply put underneath his own welcome mat at his house")
+                    print("You open the envelope and when you read the letter, you are in shock. The keys were simply put underneath your own welcome mat at his house")
                     input(": ")
                     print("Dwight: *scream*")
             game_count -= 1
@@ -268,9 +267,9 @@ elif play == "y":
 
         #Asks user if they would like to play again. Handles invalid inputs.
         #If yes is selected, all neccessary variables are reset
-        redo = input("\nWould you like to play again? y/n" )
+        redo = input("\nWould you like to play again? y/n: " )
         while redo != "y" and redo != "n":
-            redo = input("Would you like to play again? y/n")
+            redo = input("Would you like to play again? y/n: ")
         if redo == "y":
             game_count = random.randint(4, 7)
             completed_locations = []
