@@ -187,7 +187,7 @@ elif play == "y":
             print("| [3]Reception             [6]Lobby           [9]Parking Lot       |")
             print("--------------------------------------------------------------------")
 
-            # print(clue_choice, clue_choice, count1) used for debugging
+            print(clue_choice, clue_choice, count1)
             #Takes user input for location and handles invalid inputs
             location = input("Input: ")
             while location not in nums:
@@ -240,7 +240,12 @@ elif play == "y":
                 #If the user has completed the game it prompts them to to move on and
                 #includes aspect of storyline which is different each time
                 if game_count == 1:
-                    print(" ____  ____  _      _____ ____  ____  _____  _     _     ____  _____  _  ____  _      ____  _  _  _ \n/   _\/  _ \/ \  /|/  __//  __\/  _ \/__ __\/ \ /\/ \   /  _ \/__ __\/ \/  _ \/ \  /|/ ___\/ \/ \/ \n|  /  | / \|| |\ ||| |  _|  \/|| / \|  / \  | | ||| |   | / \|  / \  | || / \|| |\ |||    \| || || |\n|  \__| \_/|| | \||| |_//|    /| |-||  | |  | \_/|| |_/\| |-||  | |  | || \_/|| | \||\___ |\_/\_/\_/\n\____/\____/\_/  \|\____\\_/\_\\_/ \|  \_/  \____/\____/\_/ \|  \_/  \_/\____/\_/  \|\____/  (_)(_)(_)                                                                                                    ")
+                    print("""  / ____/ __ \| \ | |/ ____|  __ \     /\|__   __| |  | | |        /\|__   __|_   _/ __ \| \ | |/ ____| | | |
+ | |   | |  | |  \| | |  __| |__) |   /  \  | |  | |  | | |       /  \  | |    | || |  | |  \| | (___ | | | |
+ | |   | |  | | . ` | | |_ |  _  /   / /\ \ | |  | |  | | |      / /\ \ | |    | || |  | | . ` |\___ \| | | |
+ | |___| |__| | |\  | |__| | | \ \  / ____ \| |  | |__| | |____ / ____ \| |   _| || |__| | |\  |____) |_|_|_|
+  \_____\____/|_| \_|\_____|_|  \_\/_/    \_\_|   \____/|______/_/    \_\_|  |_____\____/|_| \_|_____/(_|_|_)
+                                                                                                             """)
                     print("\n" + completion_phrases[random.randint(0, 3)])
                     open_env_phrase_choice = random.randint(0, 5)
                     open_env = input("[1]Would you like to open the envelope or [2]" + jim_attacks[open_env_phrase_choice] + ": ")
